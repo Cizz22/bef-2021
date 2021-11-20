@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Product-Sans-Bold;
+    src: url(../../fonts/Product-Sans-Bold.woff);
+}
+@font-face {
+    font-family: Product-Sans-Bold-Italic;
+    src: url(../../fonts/Product-Sans-Bold-Italic.woff);
+}
+@font-face {
+    font-family: Product-Sans-Regular;
+    src: url(../../fonts/Product-Sans-Regular.woff);
+}
+@font-face {
+    font-family: Product-Sans-Italic;
+    src: url(../../fonts/Product-Sans-Italic.woff);
+}
+@font-face {
+    font-family: Hind-Regular;
+    src: url(../../fonts/Hind-Regular.woff);
+}

@@ -1,0 +1,191 @@
+@import url(fonts.css);
+@import url(keyframes.css);
+* {
+  color: #f5f5f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Product-Sans-Bold;
+}
+
+h1 {
+  margin-top: 1em !important;
+}
+
+p {
+  font-family: Hind-Regular;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-link {
+  font-family: Product-Sans-Bold;
+  font-size: 24px;
+  color: #f5f5f5 !important;
+}
+
+.nav-link:hover {
+  color: rgba(211, 168, 66, 1) !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(211, 168, 66, 1);
+  -moz-text-decoration-color: rgba(211, 168, 66, 1);
+  text-underline-offset: 4px;
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    margin: 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .nav-link {
+    display: inline-block;
+  }
+}
+
+.nav-link.active {
+  color: rgba(211, 168, 66, 1) !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(211, 168, 66, 1);
+  -moz-text-decoration-color: rgba(211, 168, 66, 1);
+  text-underline-offset: 4px;
+}
+
+header {
+  background: url("../../img/svg/bg-header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  border-bottom: 23px solid;
+  border-image: linear-gradient(
+      270deg,
+      rgba(103, 165, 68, 0.7),
+      rgba(57, 160, 162, 0.7)
+    )
+    1;
+}
+
+header h1 {
+  background: -webkit-linear-gradient(
+    264.11deg,
+    #f1453b 2.12%,
+    #3d9fa5 45.77%,
+    #67a544 60.43%,
+    #e0a839 103.11%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;
+  margin-top: 3em !important;
+}
+
+.fa-arrow-circle-down {
+  font-size: 70px;
+  color: #e0a839;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  margin-top: 2em !important;
+}
+
+main {
+  background-color: #0c264c;
+  background-image: url("../../img/svg/bg-batik.svg");
+  background-size: contain;
+  padding-bottom: 15em;
+  /* height: 300vh; */
+}
+
+.main-btn{
+    font-family: Product-Sans-Bold;
+    font-size: 24px;
+    border-radius: 12px;
+    color: #f5f5f5;
+    background: linear-gradient(90deg, rgba(226, 143, 76, 0.6), rgba(123, 212, 71, 0.6), rgba(66, 194, 196, 0.6), rgba(245, 82, 73, 0.8));
+    padding: 12px 24px;
+    transition: all .3s ease;
+}
+
+.main-btn:hover{
+    color: white;
+    background: linear-gradient(90deg, rgba(226, 143, 76, .9), rgba(123, 212, 71, .9), rgba(66, 194, 196, .9), rgba(245, 82, 73, .9));
+    box-shadow: 0 0 18px 6px rgba(226, 143, 76, 0.6);
+}
+
+section{
+    padding: 3em 0 !important ;
+}
+
+.section-title{
+    font-size: 60px;
+}
+
+.text-content{
+    font-size: 24px;
+}
+
+.intro .row, .sharing .row, .expo-campus .row, .simulasi .row{
+    padding: 2em 0 !important;
+}
+
+footer {
+  background: rgba(12, 38, 76, 1);
+  position: relative;
+  padding: 2em 0 !important;
+  font-family: Product-Sans-Bold;
+}
+
+footer .nav-link{
+    font-size: 24px;
+    border-right: 4px solid rgba(103, 165, 68, 0.7);
+    border-image: linear-gradient(to top, rgba(57, 160, 162, 0.7),  rgba(103, 165, 68, 0.7)) 1;
+    padding-right: 1em;
+}
+
+footer i{
+    font-size: 24px;
+    padding: 0 12px;
+    transition: all .2s ease;
+}
+
+footer a:hover, footer i:hover{
+    color: rgba(211, 168, 66, 1);
+}
+
+.pesan {
+  width: 50em;
+  background-color: rgba(13, 30, 59, 1);
+  position: absolute;
+  left: 22em;
+  top: -6em;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.pesan button{
+  color: white;
+  background: linear-gradient(90deg, rgba(245, 128, 32, 0.9) 0%, rgba(57, 160, 162, 0.9) 100%);
+  transition: all .2s ease;
+}
+
+.pesan button:hover{
+  box-shadow: 0 0 12px 2px rgba(57, 160, 162, 0.9);
+}
+
+.pesan button:focus{
+  box-shadow: 0 0 12px 2px rgba(57, 160, 162, 0.9) !important;
+}
+
+.pesan button:active{
+  transform: scale(1.025);
+}
