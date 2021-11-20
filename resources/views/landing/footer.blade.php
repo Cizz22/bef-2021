@@ -4,7 +4,7 @@
       <form action="#">
         <div class="mb-3 input-group">
           <input type="text" class="form-control" placeholder="Ketik disini">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+          <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Kirim</button>
         </div>
       </form>
     </div>
