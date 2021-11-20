@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing.about');
+    return view('landing.about', [
+        "title" => "About"
+    ]);
 });
 
