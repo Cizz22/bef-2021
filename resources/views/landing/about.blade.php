@@ -4,7 +4,9 @@
   <header class="d-flex flex-column justify-content-center align-items-center">
     <div class="container">
       <div class="row">
-        <h1 class="text-center">Brebes Education Fair 2022</h1>
+          <div class="col">
+              <h1 class="text-center">Brebes Education Fair 2022</h1>
+          </div>
       </div>
     </div>
     <div class="container">
