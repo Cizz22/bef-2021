@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing.about', [
-        "title" => "About"
-    ]);
-});
+// Route::get('/', function () {
+//     return view('landing.about', [
+//         "title" => "About"
+//     ]);
+// });
 
+//Landing Route
+Route::get('/', [LandingController::class, 'index'])->name('landing.about');
+
+
+
+
+//Admin Route
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin.auth.login');
+    });
+
+
+    Route::group(['middleware' => 'auth'], function () {
+        //route dashboard
+        Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard.index');
+    });
+});

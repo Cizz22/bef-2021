@@ -2,6 +2,7 @@ module.exports = {
   purge: {
       content: [
         './resources/views/**/*.blade.php',
+        './resources/views/*.blade.php',
         './storage/framework/views/*.php',
       ],
       option: {
