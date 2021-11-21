@@ -14,16 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('landing.about', [
-//         "title" => "About"
-//     ]);
-// });
-
 //Landing Route
 Route::get('/', [LandingController::class, 'index'])->name('landing.about');
-
-
 
 
 //Admin Route
