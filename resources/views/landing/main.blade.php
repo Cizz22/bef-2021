@@ -22,6 +22,10 @@
 
 <body>
 
+    <div class="scroll-up-btn">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+
     @include('landing.navbar')
 
     <div>
@@ -30,11 +34,13 @@
 
     @include('landing.footer')
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="{{ asset('js/landing/script.js') }}"></script>
   </body>
 
 </html>
