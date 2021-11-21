@@ -9,9 +9,11 @@
     </div>
     <div class="container">
       <div class="row">
-        <a href="#main" class="text-center">
-          <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-        </a>
+          <div class="text-center col">
+              <a href="#main">
+                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+              </a>
+          </div>
       </div>
     </div>
   </header>
