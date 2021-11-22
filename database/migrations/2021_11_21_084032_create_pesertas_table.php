@@ -20,7 +20,6 @@ class CreatePesertasTable extends Migration
             $table->string('whatsapp');
             $table->string('instagram');
             $table->string('school_name');
-            $table->string('instagram');
             $table->string('address');
             $table->string('photo_path');
             $table->enum('peminatan', ["Saintek" , "Soshum" , "Campuran"]);
@@ -32,9 +31,9 @@ class CreatePesertasTable extends Migration
             "Sekolah (guru, dll)",
             "Teman/keluarga"]);
             $table->unsignedBigInteger('ptn1_id');
-            $table->string('prodi1');
+            $table->string('prodi_1');
             $table->unsignedBigInteger('ptn2_id');
-            $table->string('prodi2');
+            $table->string('prodi_2');
             $table->timestamps();
         });
     }

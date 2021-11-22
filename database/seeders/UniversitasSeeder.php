@@ -14,11 +14,8 @@ class UniversitasSeeder extends Seeder
      */
     public function run()
     {
-        $this->call('UserTableSeeder');
-        $this->command->info('User table seeded!');
-
-        $path = 'app/developer_docs/countries.sql';
+        $path = 'app/developer_docs/universitas.sql';
         DB::unprepared(file_get_contents($path));
-        $this->command->info('Country table seeded!');
+        $this->command->info('Uni table seeded!');
     }
 }
