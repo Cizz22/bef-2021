@@ -1,5 +1,10 @@
 @extends('landing.main')
 
+@section('stylesheet')
+<link rel="stylesheet" href="{{ asset('css/landing/style.css') }}">
+@endsection
+
+
 @section('content')
   <header class="d-flex flex-column justify-content-center align-items-center">
     <div class="container">
