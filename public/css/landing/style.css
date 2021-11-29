@@ -128,11 +128,16 @@ header h1 {
 
 .fa-arrow-circle-down {
   font-size: 70px;
-  color: #e0a839;
+  color: #e0a839e3;
   -webkit-animation: pulse 2s infinite;
   -moz-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
   margin-top: 2em !important;
+  transition: color .2s ease-in-out;
+}
+
+.fa-arrow-circle-down:hover{
+  color: #e0a839;
 }
 
 main {
