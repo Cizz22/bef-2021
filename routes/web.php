@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 //Landing Route
 Route::get('/', [LandingController::class, 'index'])->name('landing.about');
+Route::get('/form', [LandingController::class, 'showForm'])->name('landing.form');
 
 
 //Admin Route

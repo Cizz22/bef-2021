@@ -18,6 +18,13 @@ class LandingController extends Controller
         ]);
     }
 
+    public function showForm()
+    {
+        return view('landing.form', [
+            "title" => "Form Pendaftaran"
+        ]);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
