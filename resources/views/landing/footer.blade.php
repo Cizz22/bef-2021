@@ -1,5 +1,5 @@
 <footer>
-    <div class="pesan">
+    <div class="pesan d-lg-block d-none">
       <h5 class="pb-4 text-center">Apa yang ingin kamu sampaikan?</h5>
       <form action="#">
         <div class="mb-3 input-group">
@@ -9,22 +9,28 @@
       </form>
     </div>
     <div class="container pt-5 mt-5">
+      <div class="row">
+
+      </div>
+      <div class="pesan-mobile">
+
+      </div>
       <nav>
         <div class="row">
-          <div class="col d-flex justify-content-center align-items-center">
-            <a href="#" class="nav-link">Sharing & Motivation</a>
+          <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
+            <a href="#" class="my-2 text-center nav-link w-100 my-lg-0">Sharing & Motivation</a>
           </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <a href="#" class="nav-link">Simulasi UTBK</a>
+          <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
+            <a href="#" class="my-2 text-center nav-link w-100 my-lg-0">Simulasi UTBK</a>
           </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <a href="#" class="nav-link">Expo Kampus</a>
+          <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
+            <a href="#" class="my-2 text-center nav-link w-100 my-lg-0">Expo Kampus</a>
           </div>
-          <div class="col d-flex justify-content-center align-items-center">
-            <a href="#" class="nav-link">Blog</a>
+          <div class="col-lg d-flex justify-content-center align-items-center">
+            <a href="#" class="my-2 text-center nav-link w-100 my-lg-0">Blog</a>
           </div>
-          <div class="col-sm-4 col-12">
-            <div class="container-fluid">
+          <div class="col-lg-4 col-12">
+            <div class="p-0 text-center container-fluid text-lg-start">
               <div class="row">
                 <h4>Temukan Kami di Sosial Media!</h4>
               </div>
