@@ -55,27 +55,27 @@
           <h1 class="text-center section-title">Sharing & Motivation</h1>
         </div>
         <div class="row">
-          <div class="text-center col">
+          <div class="text-center col-lg">
             <img src="img/svg/logo-bef.svg" alt="">
             <h4>Ghifary Muhammad</h4>
             <p>Sistem Informasi ITS</p>
           </div>
-          <div class="text-center col">
+          <div class="text-center col-lg">
             <img src="img/svg/logo-bef.svg" alt="">
             <h4>Ghifary Muhammad</h4>
             <p>Sistem Informasi ITS</p>
           </div>
-          <div class="text-center col">
+          <div class="text-center col-lg">
             <img src="img/svg/logo-bef.svg" alt="">
             <h4>Ghifary Muhammad</h4>
             <p>Sistem Informasi ITS</p>
           </div>
-          <div class="text-center col">
+          <div class="text-center col-lg">
             <img src="img/svg/logo-bef.svg" alt="">
             <h4>Ghifary Muhammad</h4>
             <p>Sistem Informasi ITS</p>
           </div>
-          <div class="text-center col">
+          <div class="text-center col-lg">
             <img src="img/svg/logo-bef.svg" alt="">
             <h4>Ghifary Muhammad</h4>
             <p>Sistem Informasi ITS</p>
@@ -91,70 +91,70 @@
           <h1 class="text-center section-title">Expo Campus</h1>
         </div>
         <div class="row" data-aos="fade-up" data-aos-duration="1500">
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/ui.png" alt="ui">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/itb.png" alt="itb">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/ugm.png" alt="ugm">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/unair.png" alt="unair">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/its.png" alt="its">
           </div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-duration="1500">
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/ipb.png" alt="ipb">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/unbraw.png" alt="unbraw">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/undip.png" alt="undip">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/uns.png" alt="uns">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/unpad.png" alt="unpad">
           </div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-duration="1500">
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/unnes.png" alt="unnes">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/unsoed.png" alt="unsoed">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/utel.png" alt="utel">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/utidar.png" alt="utidar">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/umsurakarta.png" alt="umsurakarta">
           </div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-duration="1500">
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/uii.png" alt="uii">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/unissula.png" alt="unissula">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/uin.png" alt="uin">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/udinus.png" alt="udinus">
           </div>
-          <div class="text-center col">
+          <div class="py-3 text-center col-md py-lg-0">
             <img src="img/png/umyogyakarta.png" alt="umyogyakarta">
           </div>
         </div>
@@ -205,14 +205,14 @@
             <h1 class="text-center section-title">Media Partner & Sponsorship</h1>
           </div>
         </div>
-        <div class="py-5 my-5 text-center row">
-          <div class="col">
+        <div class="py-5 text-center row">
+          <div class="col-md">
               <img src="img/svg/logo-bef.svg" alt="">
           </div>
-          <div class="col">
+          <div class="col-md">
               <img src="img/svg/logo-bef.svg" alt="">
           </div>
-          <div class="col">
+          <div class="col-md">
               <img src="img/svg/logo-bef.svg" alt="">
           </div>
         </div>
