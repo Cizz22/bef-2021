@@ -6,17 +6,17 @@
 
 
 @section('content')
-  <header class="d-flex flex-column justify-content-center align-items-center">
+<header class="d-flex flex-column justify-content-center align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-md">
           <h1 class="text-center">Brebes Education Fair 2022</h1>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="text-center col">
+        <div class="text-center col-md">
           <a href="#main" class="hover">
             <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
           </a>
