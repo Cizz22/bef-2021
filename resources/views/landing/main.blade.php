@@ -42,6 +42,7 @@
       AOS.init();
     </script>
     <script src="{{ asset('js/landing/script.js') }}"></script>
+    @yield('script')
   </body>
 
 </html>

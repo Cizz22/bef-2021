@@ -26,9 +26,16 @@
                 <input type="text" class="form-control" id="instagram" name="instagram" placeholder="Username Instagram">
               </div>
             <div class="mb-3">
-                <label for="foto" class="form-label">Foto Bebas Sopan</label>
-                <input type="file" class="form-control" id="foto" name="foto">
+              <label for="foto" class="form-label">Foto Bebas Sopan</label>
+              <div class="card">
+                <div class="card-header">
+                  <input accept="image/*" type="file" class="form-control" id="foto" name="foto" onchange="preview()">
+                </div>
+                <div class="text-center card-body">
+                    <img src="{{ asset('img/placeholder-image.png') }}" alt="foto-kamu" id="frame" height="250px">
+                </div>
               </div>
+            </div>
               <div class="mb-3">
                 <label for="alamat" class="form-label">Alamat</label>
                 <textarea class="form-control" id="alamat" name="alamat" rows="3" placeholder="Alamat"></textarea>
@@ -99,4 +106,12 @@
           <!-- (Teman/grup WA/akun Instagram BEF/tiktok/akun informasi tryout)  -->
     </div>
 </main>
+@endsection
+
+@section('script')
+    <script>
+        function preview() {
+            frame.src=URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
 @endsection
