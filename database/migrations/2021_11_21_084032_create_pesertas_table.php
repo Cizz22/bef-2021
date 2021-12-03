@@ -24,7 +24,7 @@ class CreatePesertasTable extends Migration
             $table->string('photo_path');
             $table->enum('peminatan', ["Saintek" , "Soshum" , "Campuran"]);
             $table->string('payment_proof_path');
-            $table->enum('payment_verif_status', ['Belum Bayar', 'Terverifikasi', 'Ditolak'])->default('Belum Bayar');
+            $table->enum('payment_verif_status', ['Belum terverifikasi', 'Terverifikasi', 'Ditolak'])->default('terverifikasi');
             $table->enum('info_source', ["Media Sosial BEF 2021",
             "Media Sosial selain BEF 2021 (info lomba, dll)",
             "Grup WA/Line/dll",
