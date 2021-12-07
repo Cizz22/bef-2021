@@ -9,15 +9,17 @@ class Peserta extends Model
 {
     use HasFactory;
 
-    protected $fillable = [ 'name', 'email', 'whatapp', ' instagram', 'school_name', 'address', 'photo_path',
-                             'peminatan', 'payment_proof_path', 'payment_verif_status', 'ptn1_id', 'prodi_1', 'ptn2', 'prodi_2'];
-
-    public function pilihanPertama(){
+    protected $fillable = [
+        'name', 'email', 'whatsapp', 'instagram', 'school_name', 'address', 'kelas', 'photo_path',
+        'peminatan', 'payment_proof_path', 'payment_verif_status', 'info_source', 'ptn1_id', 'prodi_1', 'ptn2_id', 'prodi_2'
+    ];
+    public function pilihanPertama()
+    {
         return $this->belongsTo(Universitas::class, 'ptn1_id');
     }
 
-    public function pilihanKedua(){
+    public function pilihanKedua()
+    {
         return $this->belongsTo(Universitas::class, 'ptn2_id');
     }
-
 }

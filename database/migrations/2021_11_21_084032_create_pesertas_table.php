@@ -21,15 +21,12 @@ class CreatePesertasTable extends Migration
             $table->string('instagram');
             $table->string('school_name');
             $table->string('address');
+            $table->enum('kelas', ["10", "11", "12"]);
             $table->string('photo_path');
-            $table->enum('peminatan', ["Saintek" , "Soshum" , "Campuran"]);
-            $table->string('payment_proof_path');
+            $table->enum('peminatan', ["Saintek", "Soshum", "Campuran"]);
+            $table->string('payment_proof_path')->nullable();
             $table->enum('payment_verif_status', ['Belum terverifikasi', 'Terverifikasi', 'Ditolak'])->default('terverifikasi');
-            $table->enum('info_source', ["Media Sosial BEF 2021",
-            "Media Sosial selain BEF 2021 (info lomba, dll)",
-            "Grup WA/Line/dll",
-            "Sekolah (guru, dll)",
-            "Teman/keluarga"]);
+            $table->string('info_source');
             $table->unsignedBigInteger('ptn1_id');
             $table->string('prodi_1');
             $table->unsignedBigInteger('ptn2_id');
