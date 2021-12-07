@@ -10,9 +10,7 @@ h2,
 h3,
 h4,
 h5,
-p,
-a,
-label {
+h6{
   font-family: Product-Sans-Bold;
   color: #f5f5f5;
 }
@@ -21,8 +19,10 @@ h1 {
   margin-top: 1em !important;
 }
 
-p {
+p,
+label {
   font-family: Hind-Regular;
+  color: #f5f5f5;
 }
 
 a {
