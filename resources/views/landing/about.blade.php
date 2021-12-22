@@ -191,7 +191,7 @@
         </div>
         <div class="my-5 row"  data-aos="fade-up" data-aos-duration="1500">
           <div class="text-center col">
-            <a href="#" target="_blank" id="btn-daftar">GAS</a>
+            <a href="{{route('landing.form')}}" id="btn-daftar">GAS</a>
           </div>
         </div>
         <div class="row"></div>

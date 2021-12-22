@@ -20,6 +20,9 @@
             <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('landing.form')}}">Daftar</a>
+                </li>
         </ul>
     </div>
 </div>

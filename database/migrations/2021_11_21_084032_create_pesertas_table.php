@@ -25,7 +25,7 @@ class CreatePesertasTable extends Migration
             $table->string('photo_path');
             $table->enum('peminatan', ["Saintek", "Soshum", "Campuran"]);
             $table->string('payment_proof_path')->nullable();
-            $table->enum('payment_verif_status', ['Belum terverifikasi', 'Terverifikasi', 'Ditolak'])->default('terverifikasi');
+            $table->enum('payment_verif_status', ['Belum terverifikasi', 'Terverifikasi', 'Ditolak'])->default('Belum terverifikasi');
             $table->string('info_source');
             $table->unsignedBigInteger('ptn1_id');
             $table->string('prodi_1');

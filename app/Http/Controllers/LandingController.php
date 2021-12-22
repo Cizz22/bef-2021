@@ -44,7 +44,7 @@ class LandingController extends Controller
 
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required',
+            'email' => 'required|unique:pesertas,email',
             'whatsapp' => 'required',
             'instagram' => 'required',
             'school_name' => 'required',
