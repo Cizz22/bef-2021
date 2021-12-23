@@ -18,7 +18,7 @@
                             </svg>
                         </div>
                         <div class="mx-5">
-                            <h4 class="text-2xl font-semibold text-gray-700">0</h4>
+                            <h4 class="text-2xl font-semibold text-gray-700">{{$total}}</h4>
                             <div class="text-gray-500">Total Peserta</div>
                         </div>
                     </div>
@@ -31,8 +31,8 @@
                         </div>
 
                         <div class="mx-5">
-                            <h4 class="text-2xl font-semibold text-gray-700">0</h4>
-                            <div class="text-gray-500">Terkonfirmasi</div>
+                            <h4 class="text-2xl font-semibold text-gray-700">{{$terverifikasi}}</h4>
+                            <div class="text-gray-500">Terverifikasi</div>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,8 @@
                         </div>
 
                         <div class="mx-5">
-                            <h4 class="text-2xl font-semibold text-gray-700">0</h4>
-                            <div class="text-gray-500">Belum Terkonfirmasi</div>
+                            <h4 class="text-2xl font-semibold text-gray-700">{{$blm_terverif}}</h4>
+                            <div class="text-gray-500">Belum Terverifikasi</div>
                         </div>
                     </div>
                 </div>
