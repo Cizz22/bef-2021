@@ -1,7 +1,7 @@
 <nav class="px-1 navbar navbar-expand-lg navbar-dark px-sm-5 fixed-top" style="background: rgba(12, 38, 76, 1);"">
     <div class="flex-row-reverse container-fluid">
         <a class="navbar-brand" href="/">
-        <img src="{{ asset('img/svg/logo-bef.svg') }}" alt="logo-bef">
+        <img src="{{ asset('img/svg/logo-bef.svg') }}" height="60" alt="logo-bef">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>

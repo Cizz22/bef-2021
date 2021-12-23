@@ -33,13 +33,12 @@
           <h1 class="section-title">Kenalan Yuk!</h1>
         </div>
         <div class="row">
-          <img src="img/svg/logo-bef.svg" class="border rounded-circle" alt="logo-bef">
+          <img src="img/svg/logo-bef.svg" class="" height="250px" alt="logo-bef">
         </div>
         <div class="row">
-          <p class="text-center text-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque enim eum
-            alias blanditiis nobis doloribus ipsa eaque? Modi velit, eaque eos quae quibusdam saepe, repellat aut
-            consequuntur sit deserunt labore. Aspernatur corporis repellat voluptate quam praesentium dolorum laborum
-            tempora eum? Architecto ea culpa dolorum perspiciatis unde debitis, cupiditate voluptas tempore!</p>
+          <p class="text-center text-content">Brebes Education Fair (BEF) merupakan kegiatan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Kabupaten Brebes dari berbagai perguruan tinggi di Indonesia. Brebes Education ini sudah ada sejak tahun 2013, yang berarti tahun ini memasuki tahun ke-10 hadirnya BEF di Kabupaten Brebes.</p>
+            <p class="text-center text-content">
+                "One Decision for Realizing Your Dreams" atau "ONE DECADE" sebagai tema BEF 2022 dengan harapan BEF yang ke-1 Dekade ini menjadi sahabat berjuang adik-adik SMA/sederajat yang membantu untuk menentukan keputusan demi mewujudkan impian sehingga dapat menjadi manusia unggul demi kemajuan Brebes pada masa mendatang.</p>
         </div>
         <div class="row">
           <a href="#" class="main-btn">
@@ -164,17 +163,10 @@
     <section class="simulasi" data-aos="fade-up" data-aos-duration="1500">
       <div class="container d-flex flex-column align-items-center">
         <div class="row">
-          <h1 class="section-title">Simulasi UTBK</h1>
+          <h1 class="section-title">Try Out UTBK</h1>
         </div>
         <div class="row">
-          <p class="text-center text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores
-            quidem, quas, voluptates, illum maiores unde repellat aperiam quaerat libero adipisci sunt dignissimos
-            reiciendis cum distinctio nesciunt hic. Assumenda expedita laudantium quos iure? Dignissimos ducimus
-            provident ullam tempora natus quas asperiores sequi maxime saepe voluptatem, a ipsam sapiente ad corrupti
-            officiis. Omnis modi rem illo cum recusandae. Illo, cumque repellat vero dolorem dolor expedita excepturi
-            facere quae est repellendus laborum magnam sint illum quo earum recusandae dicta. Doloremque explicabo sit
-            mollitia recusandae exercitationem suscipit in magnam iure odit consequuntur molestias ab molestiae vitae
-            atque corrupti, sint dicta. Optio, tempora hic?</p>
+          <p class="text-center text-content">BEF membantu memfasilitasi dengan mengadakan simulasi untuk pelajar SMA/MA/K/sederajat dalam mempersiapkan Ujian Tulis Berbasis Komputer (UTBK) yang menjadi syarat masuk perguruan tinggi melalui jalur SBMPTN. Try out ini dibagi menjadi dua kategori yaitu SAINTEK dan SOSHUM dengan pelaksanakan sebagaimana UTBK yang sebenarnya. Pelaksanaan try out UTBK serta pembahasan soal bekerjasama dengan Lembaga Bimbingan Belajar terpercaya yang berkompeten di bidangnya.</p>
         </div>
         <div class="row">
           <a href="#" class="main-btn">Kepoin Lebih Lanjut!</a>
