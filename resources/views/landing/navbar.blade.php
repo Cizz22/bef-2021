@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">About</a>
+            <a class="nav-link {{Route::is('landing.about') ? 'active' : null}}" aria-current="page" href="/">About</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Event</a>
@@ -21,7 +21,7 @@
             <a class="nav-link" href="#">Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('landing.form')}}">Daftar</a>
+                <a class="nav-link {{Route::is('landing.form') ? 'active' : null}}" href="{{route('landing.form')}}">Daftar</a>
                 </li>
         </ul>
     </div>
