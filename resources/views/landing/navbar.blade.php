@@ -12,13 +12,13 @@
             <a class="nav-link active" aria-current="page" href="/">About</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Event</a>
+            <a class="nav-link" href="/coming-soon">Event</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Kontak</a>
+            <a class="nav-link" href="/coming-soon">Kontak</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="/coming-soon">Blog</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('landing.form')}}">Daftar</a>

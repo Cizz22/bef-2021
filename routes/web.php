@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 //Landing Route
 Route::get('/', [LandingController::class, 'index'])->name('landing.about');
+Route::get('/coming-soon', [LandingController::class, 'soon'])->name('landing.coming_soon');
 Route::get('/form', [LandingController::class, 'showForm'])->name('landing.form');
 Route::post('/store', [LandingController::class, 'store'])->name('landing.form-store');
 

@@ -22,6 +22,11 @@ class LandingController extends Controller
         ]);
     }
 
+    public function soon()
+    {
+        return view('landing.coming_soon');
+    }
+
     public function showForm()
     {
         $ptn = Universitas::all();
