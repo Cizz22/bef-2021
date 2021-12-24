@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\PesertaListController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,9 +29,9 @@ Route::prefix('admin')->group(function () {
         return view('admin.auth.login');
     });
 
-
     Route::group(['middleware' => 'auth'], function () {
         //route dashboard
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard.index');
+        Route::get('/listpeserta', [PesertaListController::class, 'index'])->name('admin.peserta.index');
     });
 });

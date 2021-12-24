@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {{-- Meta buat SEO --}}
-  <meta name="description" content="@yield('desc')">
-  <meta name="keywords" content="@yield('keywords','BEF, Sistem Informasi ITS, Sistem Informasi, ITS, TryOut')">
+  <meta name="description" content="@yield('desc','Brebes Education Fair (BEF) merupakan kegiatan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Kabupaten Brebes dari berbagai perguruan tinggi di Indonesia. Brebes Education ini sudah ada sejak tahun 2013, yang berarti tahun ini memasuki tahun ke-10 hadirnya BEF di Kabupaten Brebes.')">
+  <meta name="keywords" content="@yield('keywords','BEF , ITS, TryOut','brebes','SMA')">
   <meta name="author" content="BEF 2021">
 
   <!-- Bootstrap CSS -->
