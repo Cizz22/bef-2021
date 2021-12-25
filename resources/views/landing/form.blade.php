@@ -8,7 +8,7 @@
 <main>
     <div class="container">
         <h1 class="pt-5 mt-5 text-center">Form Pendaftaran BEF</h1>
-        <form action="{{route('landing.form-store')}}" method="POST" enctype="multipart/form-data" class="shadow p-md-5 ">
+        <form action="{{route('landing.form-store')}}" method="POST" enctype="multipart/form-data" class="pt-5 shadow p-md-5 pt-sm-0">
             @csrf
             <div class="mb-3 form-group">
               <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
