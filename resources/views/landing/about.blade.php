@@ -37,8 +37,6 @@
         </div>
         <div class="row">
           <p class="px-5 text-center text-content">Brebes Education Fair (BEF) merupakan kegiatan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Kabupaten Brebes dari berbagai perguruan tinggi di Indonesia. Brebes Education ini sudah ada sejak tahun 2013, yang berarti tahun ini memasuki tahun ke-10 hadirnya BEF di Kabupaten Brebes.</p>
-            <p class="px-5 text-center text-content">
-                "One Decision for Realizing Your Dreams" atau "ONE DECADE" sebagai tema BEF 2022 dengan harapan BEF yang ke-1 Dekade ini menjadi sahabat berjuang adik-adik SMA/sederajat yang membantu untuk menentukan keputusan demi mewujudkan impian sehingga dapat menjadi manusia unggul demi kemajuan Brebes pada masa mendatang.</p>
         </div>
         <div class="row">
           <a href="#" class="main-btn">

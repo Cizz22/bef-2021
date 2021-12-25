@@ -164,7 +164,7 @@ header h1 {
 main {
     background-color: #0c264c;
     background-image: url("../../img/svg/bg-batik.svg");
-    background-size: contain;
+    background-size: cover;
     padding-bottom: 15em;
     /* height: 300vh; */
 }
