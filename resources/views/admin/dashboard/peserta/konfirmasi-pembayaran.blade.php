@@ -9,22 +9,22 @@
                     <thead class="justify-between">
                         <tr class="bg-gray-600 w-full">
                             <th class="px-4 py-2">
-                                <span class="flex text-white">No</span>
+                                <span class="text-white">No</span>
                             </th>
                             <th class="px-16 py-2">
-                                <span class="flex text-white">Nama</span>
+                                <span class=" text-white">Nama</span>
                             </th>
                             <th class="px-16 py-2 ">
-                                <span class="flex text-white">Email</span>
+                                <span class=" text-white">Email</span>
                             </th>
                             <th class="px-16 py-2 ">
-                                <span class="text-white flex">No.Handphone</span>
+                                <span class="text-white">No.Handphone</span>
                             </th>
                             <th class="px-16 py-2 ">
-                                <span class="text-white flex">Bukti Pembayaran</span>
+                                <span class="text-white">Bukti Pembayaran</span>
                             </th>
                             <th class="px-8 py-2 ">
-                                <span class="text-white flex">Action</span>
+                                <span class="text-white">Action</span>
                             </th>
                         </tr>
                     </thead>
@@ -121,7 +121,7 @@
         </div>
         <hr class="my-4"/>
 
-        <div class="flex flex-row justify-end">
+        <div class="flex flex-row gap-2 justify-end">
             <button
                 type="button" @click="showModal1 = false"
                 class="text-gray border-2 border-gray-300 font-bold py-2 px-4 rounded-full mr-2" title="Tutup">
@@ -136,10 +136,6 @@
 </main>
 @push('css')
     <style>
-        .tabletr td{
-            margin-left: 20px!important;
-        }
-
         input[type="search"]{
             background-color: white!important;
             margin-bottom: 10px
@@ -148,7 +144,7 @@
         select[name="tabel_length"]{
             background-color: white!important;
         }
-
+        th.dt-center, td.dt-center { text-align: center; }
     </style>
 @endpush
 
@@ -158,6 +154,9 @@
             $('#tabel').DataTable({
                 serverside:true,
                 responsive:true,
+                columnDefs: [
+                    {"className": "dt-center", "targets": "_all"}
+                ],
                 ajax: {
                     url: "{{route('admin.konfirmasibayar.index')}}"
                 },
@@ -193,6 +192,10 @@
                 $('#photo').attr('src', `{{asset('storage/photo_path/${data.photo_path}')}}`)
                 $('#buktibayar').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
                 $('#buktibayara').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
+                $('#ptn1').text(data.pilihan_pertama.nama_universitas)
+                $('#pil1').text(data.prodi_1)
+                $('#ptn2').text(data.pilihan_kedua.nama_universitas)
+                $('#pil2').text(data.prodi_2)
             })
 });
 

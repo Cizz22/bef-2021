@@ -9,22 +9,22 @@
                     <thead class="justify-between">
                         <tr class="bg-gray-600 w-full">
                             <th class="px-16 py-2">
-                                <span class="flex text-white">No</span>
+                                <span class="text-white">No</span>
                             </th>
                             <th class="px-16 py-2">
-                                <span class="flex text-white">Nama</span>
+                                <span class="text-white">Nama</span>
                             </th>
                             <th class="px-16 py-2 ">
-                                <span class="flex text-white">Email</span>
+                                <span class=" text-white">Email</span>
                             </th>
                             <th class="px-16 py-2 ">
-                                <span class="text-white flex">No.Handphone</span>
+                                <span class="text-white ">No.Handphone</span>
                             </th>
                             <th class="px-16 py-2 ">
-                                <span class="text-white flex">Status</span>
+                                <span class="text-white ">Status</span>
                             </th>
                             <th class="px-8 py-2 ">
-                                <span class="text-white flex">Action</span>
+                                <span class="text-white ">Action</span>
                             </th>
                         </tr>
                     </thead>
@@ -154,6 +154,9 @@
                 index:false,
                 serverside:true,
                 responsive:true,
+                columnDefs: [
+                    {"className": "dt-center", "targets": "_all"}
+                ],
                 ajax: {
                     url: "{{route('admin.peserta.index')}}"
                 },
@@ -187,6 +190,11 @@
                 $('#kelas').text(data.kelas)
                 $('#instagram').text(data.instagram)
                 $('#photo').attr('src', `{{asset('storage/photo_path/${data.photo_path}')}}`)
+                $('#ptn1').text(data.pilihan_pertama.nama_universitas)
+                $('#pil1').text(data.prodi_1)
+                $('#ptn2').text(data.pilihan_kedua.nama_universitas)
+                $('#pil2').text(data.prodi_2)
+
             })
 });
     </script>

@@ -51,7 +51,7 @@ class PesertaListController extends Controller
     }
 
     function detailPeserta($id){
-        $peserta = Peserta::find($id);
+        $peserta = Peserta::with(['pilihanPertama','pilihanKedua'])->find($id);
 	    return response()->json([
 	      'data' => $peserta
 	    ]);
