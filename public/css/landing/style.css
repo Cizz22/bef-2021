@@ -133,13 +133,14 @@ header {
 }
 
 header h1 {
-    background: -webkit-linear-gradient(
-        264.11deg,
-        #f1453b 2.12%,
-        #3d9fa5 45.77%,
-        #67a544 60.43%,
-        #e0a839 103.11%
+    background: linear-gradient(
+        264.93deg,
+        #f1453b 2.55%,
+        #e0a839 42.83%,
+        #67a544 63.62%,
+        #39a0a2 97.63%
     );
+
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
