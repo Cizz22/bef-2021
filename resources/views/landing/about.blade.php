@@ -1,7 +1,7 @@
 @extends('landing.main')
 
 @section('stylesheet')
-<link rel="stylesheet" href="{{ asset('css/landing/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/landing/about.css') }}">
 @endsection
 
 

@@ -22,6 +22,13 @@ class LandingController extends Controller
         ]);
     }
 
+    public function showBlogs()
+    {
+        return view('landing.blogs', [
+            "title" => "About"
+        ]);
+    }
+
     public function soon()
     {
         return view('landing.coming_soon');

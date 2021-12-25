@@ -1,0 +1,37 @@
+@import url(global.css);
+
+.link-blogs {
+    display: flex !important;
+}
+
+.link-blogs:hover {
+    text-decoration: none;
+}
+
+.card {
+    background: linear-gradient(
+        120deg,
+        #0c264c 2.66%,
+        rgba(57, 160, 162, 0.575) 106.69%
+    );
+    border-radius: 18px !important;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.259);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.025) !important;
+}
+
+.card-title {
+    background: linear-gradient(93.29deg, #d4f0bc -2.79%, #f3b9b3 108.43%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 24px;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0 !important;
+}
