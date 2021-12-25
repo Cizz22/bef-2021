@@ -2,7 +2,7 @@
 
 @section('content')
 <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-300">
-    <div class="container mx-auto py-6 px-8">
+    <div class="container my-5 mx-auto rounded-sm py-6 px-8">
         <div class="flex items-center justify-between">
             <div class="relative">
                 <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
@@ -28,9 +28,6 @@
                 <table class="min-w-full table-auto">
                     <thead class="justify-between">
                         <tr class="bg-gray-600 w-full">
-                            <th class="px-4 py-2">
-                                <span class="text-white">No</span>
-                            </th>
                             <th class="px-16 py-2">
                                 <span class="text-white">Nama</span>
                             </th>
@@ -51,9 +48,6 @@
                     <tbody class="bg-gray-200">
                         @forelse($peserta as $index=>$p)
                             <tr class="border bg-white">
-                                <td class="px-4 py-2">
-                                    <p class="text-center">{{$index+1}}</p>
-                                   </td>
                                 <td class="px-16 py-2">
                                  <p class="text-center">{{$p->name}}</p>
                                 </td>
@@ -67,7 +61,21 @@
                                     <p class="text-center">{{$p->payment_verif_status}}</p>
                                 </td>
                                 <td class="px-16 py-2">
-                                    <p class="text-center"></p>
+                                    <div class="flex space-x-1 justify-around">
+                                        <button
+                                            class="p-1 text-blue-600 hover:bg-blue-600 hover:text-white rounded" title="Lihat Detail">
+                                            <i class="fas fa-search-plus"></i>
+                                        </button>
+                                        {{-- <button
+                                            class="p-1 text-green-600 hover:bg-green-600 hover:text-white rounded" title="Terima">
+                                            <i class="fas fa-check"></i>
+                                        </button>
+                                        <button
+                                            class="p-1 text-red-600 hover:bg-red-600 hover:text-white rounded" title="Tolak">
+                                            <i class="fas fa-times"></i>
+                                        </button> --}}
+                                    </div>
+
                                 </td>
 
                             </tr>
