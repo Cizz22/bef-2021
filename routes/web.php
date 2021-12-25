@@ -34,5 +34,6 @@ Route::prefix('admin')->group(function () {
         //route dashboard
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard.index');
         Route::get('/listpeserta', [PesertaListController::class, 'index'])->name('admin.peserta.index');
+        Route::get('/konfirmasibayar', [PesertaListController::class, 'konfirmasibayar'])->name('admin.konfirmasibayar.index');
     });
 });
