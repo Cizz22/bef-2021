@@ -25,7 +25,7 @@ class LandingController extends Controller
     public function showBlogs()
     {
         return view('landing.blogs', [
-            "title" => "About"
+            "title" => "Blogs"
         ]);
     }
 
