@@ -51,7 +51,6 @@ class LandingController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
         // Untuk simpan data pendaftar
 
         $this->validate($request, [
@@ -68,6 +67,7 @@ class LandingController extends Controller
             'prodi_1' => 'required',
             'ptn2_id' => 'required',
             'prodi_2' => 'required',
+            'payment_proof' => 'required|image|mimes:png,jpg,jpeg'
         ]);
 
         // $imageName = time() . '.' . $request->photo_path->extension();
@@ -76,6 +76,8 @@ class LandingController extends Controller
 
         $photo_path = $request->file('photo_path');
         $photo_path->storeAs('public/photo_path', $photo_path->hashName());
+        $payment_proof= $request->file('payment_proof');
+        $payment_proof->storeAs('public/payment_proof', $payment_proof->hashName());
 
         $peserta = Peserta::create([
             'name' => $request->name,
@@ -92,6 +94,7 @@ class LandingController extends Controller
             'prodi_1' => $request->prodi_1,
             'ptn2_id' => $request->ptn2_id,
             'prodi_2' => $request->prodi_2,
+            'payment_proof_path' => $payment_proof->hashName()
         ]);
 
         if ($peserta) {

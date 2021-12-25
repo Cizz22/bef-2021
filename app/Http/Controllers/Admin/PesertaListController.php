@@ -40,7 +40,7 @@ class PesertaListController extends Controller
             }
             )
             ->addColumn('payment_proof_path', function($data){
-                $button = '<div class="flex space-x-1 justify-around"> <a href="{{asset(`storage/payment_proof/'.$data->payment_proof_path.'`)}}" target=_blank> <button class="p-1 text-blue-600 hover:bg-blue-600 hover:text-white rounded" title="Download Bukti Bayar"><i class="fas fa-download"></i></button></div>';
+                $button = '<div class="flex space-x-1 justify-around"> <a href="'.asset("storage/payment_proof/$data->payment_proof_path").'" target=_blank> <button class="p-1 text-blue-600 hover:bg-blue-600 hover:text-white rounded" title="Download Bukti Bayar"><i class="fas fa-download"></i></button></div>';
                 return $button;
             }
             )

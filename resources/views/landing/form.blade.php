@@ -50,10 +50,10 @@
               <label for="foto" class="form-label">Foto Bebas Sopan</label>
               <div class="card">
                 <div class="card-header">
-                  <input accept="image/*" type="file" class="form-control @error('photo_path') is-invalid @enderror" id="foto" name="photo_path" value="{{ old('photo_path') }}" onchange="preview()">
+                  <input accept="image/*" type="file" class="form-control @error('photo_path') is-invalid @enderror" id="foto" name="photo_path" value="{{ old('photo_path') }}" onchange="preview('photo')">
                 </div>
                 <div class="text-center card-body">
-                    <img src="{{ asset('img/placeholder-image.png') }}" alt="foto-kamu" id="frame" class="img-fluid foto-kamu">
+                    <img src="{{ asset('img/placeholder-image.png') }}" alt="foto-kamu" id="framephoto" class="img-fluid foto-kamu">
                 </div>
               </div>
                 @error('photo_path')
@@ -154,6 +154,22 @@
                     </div>
                 @enderror
             </div>
+            <div class="mb-3 form-group">
+                <label for="foto" class="form-label">Bukti Pembayaran</label>
+                <div class="card">
+                  <div class="card-header">
+                    <input accept="image/*" type="file" class="form-control @error('payment_proof') is-invalid @enderror" id="foto" name="payment_proof" value="{{ old('payment_proof') }}" onchange="preview('buktiBayar')">
+                  </div>
+                  <div class="text-center card-body">
+                      <img src="{{ asset('img/placeholder-image.png') }}" alt="foto-kamu" id="framebuktiBayar" class="img-fluid foto-kamu">
+                  </div>
+                </div>
+                  @error('photo_path')
+                      <div class="mt-2 alert alert-danger">
+                          {{ $message }}
+                      </div>
+                  @enderror
+              </div>
               <p>Dapat info BEF dari?</p>
               <div class="mb-3 form-check">
                 <input class="form-check-input" type="checkbox" value="teman" id="teman" name="info_source[]">
@@ -196,8 +212,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
     <script>
-        function preview() {
-            frame.src=URL.createObjectURL(event.target.files[0]);
+        function preview(type) {
+            (type === 'photo' ? framephoto : framebuktiBayar).src=URL.createObjectURL(event.target.files[0]);
         }
 
         $(document).ready(function () {

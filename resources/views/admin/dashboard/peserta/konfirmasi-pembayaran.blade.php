@@ -191,8 +191,8 @@
                 $('#kelas').text(data.kelas)
                 $('#instagram').text(data.instagram)
                 $('#photo').attr('src', `{{asset('storage/photo_path/${data.photo_path}')}}`)
-                $('#buktibayar').attr('src', `{{asset('storage/photo_path/${data.payment_proof_path}')}}`)
-                $('#buktibayara').attr('href', `{{asset('storage/photo_path/${data.payment_proof_path}')}}`)
+                $('#buktibayar').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
+                $('#buktibayara').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
             })
 });
 
