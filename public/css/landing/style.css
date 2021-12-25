@@ -2,8 +2,8 @@
 @import url(keyframes.css);
 @import url(footer.css);
 
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -11,205 +11,239 @@ h2,
 h3,
 h4,
 h5,
-h6{
-  font-family: Product-Sans-Bold;
-  color: #f5f5f5;
+h6 {
+    font-family: Product-Sans-Bold;
+    color: #f5f5f5;
 }
 
 h1 {
-  margin-top: 1em !important;
+    margin-top: 1em !important;
 }
 
 p,
 label {
-  font-family: Hind-Regular;
-  color: #f5f5f5;
+    font-family: Hind-Regular;
+    color: #f5f5f5;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-.scroll-up-btn{
-  position: fixed;
-  width: 50px;
-  background: rgba(57, 160, 162, .6);
-  right: 1em;
-  bottom: 10px;
-  text-align: center;
-  line-height: 50px;
-  color: #fff;
-  z-index: 9999;
-  font-size: 30px;
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all .2s ease;
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #dddddd;
 }
-.scroll-up-btn.show{
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
-  -webkit-animation: pulse 2s infinite;
-  -moz-animation: pulse 2s infinite;
-  animation: pulse 2s infinite;
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #dddddd;
 }
-.scroll-up-btn:hover{
-  background: rgba(57, 160, 162, 1);
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(12, 38, 76, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(17, 50, 100);
+}
+
+.scroll-up-btn {
+    position: fixed;
+    width: 50px;
+    background: rgba(57, 160, 162, 0.6);
+    right: 1em;
+    bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-animation: pulse 2s infinite;
+    -moz-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+.scroll-up-btn:hover {
+    background: rgba(57, 160, 162, 1);
 }
 
 .nav-link {
-  font-family: Product-Sans-Bold;
-  font-size: 24px;
-  color: #f5f5f5 !important;
+    font-family: Product-Sans-Bold;
+    font-size: 18px;
+    color: #f5f5f5 !important;
 }
 
 .nav-link:hover {
-  color: rgba(211, 168, 66, 1) !important;
-  text-decoration: underline;
-  text-decoration-color: rgba(211, 168, 66, 1);
-  -moz-text-decoration-color: rgba(211, 168, 66, 1);
-  -webkit-text-decoration-color: rgba(211, 168, 66, 1);
-  text-underline-offset: 4px;
+    color: rgba(211, 168, 66, 1) !important;
+    text-decoration: underline;
+    text-decoration-color: rgba(211, 168, 66, 1);
+    -moz-text-decoration-color: rgba(211, 168, 66, 1);
+    -webkit-text-decoration-color: rgba(211, 168, 66, 1);
+    text-underline-offset: 4px;
 }
 
 @media (min-width: 1024px) {
-  .nav-link {
-    margin: 0 24px;
-  }
+    .nav-link {
+        margin: 0 24px;
+    }
 }
 @media (max-width: 768px) {
-  .nav-link {
-    display: inline-block;
-  }
+    .nav-link {
+        display: inline-block;
+    }
 }
 
 .nav-link.active {
-  color: rgba(211, 168, 66, 1) !important;
-  text-decoration: underline;
-  text-decoration-color: rgba(211, 168, 66, 1);
-  -moz-text-decoration-color: rgba(211, 168, 66, 1);
-  -webkit-text-decoration-color: rgba(211, 168, 66, 1);
-  text-underline-offset: 4px;
+    color: rgba(211, 168, 66, 1) !important;
+    text-decoration: underline;
+    text-decoration-color: rgba(211, 168, 66, 1);
+    -moz-text-decoration-color: rgba(211, 168, 66, 1);
+    -webkit-text-decoration-color: rgba(211, 168, 66, 1);
+    text-underline-offset: 4px;
 }
 
 header {
-  background: url("../../img/svg/bg-header.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  border:solid;
-  border-width: 0 0 23px 0;
-  border-image: linear-gradient(
-      270deg,
-      rgba(103, 165, 68, 0.7),
-      rgba(57, 160, 162, 0.7)
-    )
-    1;
+    background: url("../../img/svg/bg-header.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    border: solid;
+    border-width: 0 0 23px 0;
+    border-image: linear-gradient(
+            270deg,
+            rgba(103, 165, 68, 0.7),
+            rgba(57, 160, 162, 0.7)
+        )
+        1;
 }
 
 header h1 {
-  background: -webkit-linear-gradient(
-    264.11deg,
-    #f1453b 2.12%,
-    #3d9fa5 45.77%,
-    #67a544 60.43%,
-    #e0a839 103.11%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 75px;
-  margin-top: 3em !important;
+    background: -webkit-linear-gradient(
+        264.11deg,
+        #f1453b 2.12%,
+        #3d9fa5 45.77%,
+        #67a544 60.43%,
+        #e0a839 103.11%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 75px;
+    margin-top: 3em !important;
 }
 
 .fa-arrow-circle-down {
-  font-size: 70px;
-  color: #e0a839e3;
-  -webkit-animation: pulse 2s infinite;
-  -moz-animation: pulse 2s infinite;
-  animation: pulse 2s infinite;
-  margin-top: 2em !important;
-  transition: color .2s ease-in-out;
+    font-size: 70px;
+    color: #e0a839e3;
+    -webkit-animation: pulse 2s infinite;
+    -moz-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    margin-top: 2em !important;
+    transition: color 0.2s ease-in-out;
 }
 
-.fa-arrow-circle-down:hover{
-  color: #e0a839;
+.fa-arrow-circle-down:hover {
+    color: #e0a839;
 }
 
 main {
-  background-color: #0c264c;
-  background-image: url("../../img/svg/bg-batik.svg");
-  background-size: contain;
-  padding-bottom: 15em;
-  /* height: 300vh; */
+    background-color: #0c264c;
+    background-image: url("../../img/svg/bg-batik.svg");
+    background-size: contain;
+    padding-bottom: 15em;
+    /* height: 300vh; */
 }
 
-.main-btn{
+.main-btn {
     font-family: Product-Sans-Bold;
     font-size: 24px;
     border-radius: 12px;
     color: #f5f5f5;
-    background: linear-gradient(90deg, rgba(226, 143, 76, 0.6), rgba(123, 212, 71, 0.6), rgba(66, 194, 196, 0.6), rgba(245, 82, 73, 0.8));
+    background: linear-gradient(
+        90deg,
+        rgba(226, 143, 76, 0.6),
+        rgba(123, 212, 71, 0.6),
+        rgba(66, 194, 196, 0.6),
+        rgba(245, 82, 73, 0.8)
+    );
     padding: 12px 24px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 
-.main-btn:hover{
+.main-btn:hover {
     color: white;
-    background: linear-gradient(90deg, rgba(226, 143, 76, .9), rgba(123, 212, 71, .9), rgba(66, 194, 196, .9), rgba(245, 82, 73, .9));
+    background: linear-gradient(
+        90deg,
+        rgba(226, 143, 76, 0.9),
+        rgba(123, 212, 71, 0.9),
+        rgba(66, 194, 196, 0.9),
+        rgba(245, 82, 73, 0.9)
+    );
     box-shadow: 0 0 18px 6px rgba(226, 143, 76, 0.6);
 }
 
-section{
+section {
     padding: 3em 0 !important ;
 }
 
-.section-title{
-    font-size: 5rem;
+.section-title {
+    font-size: 3rem;
 }
 
-.text-content{
-  font-size: 24px;
+.text-content {
+    font-size: 24px;
 }
-@media (max-width:992px) {
-  header h1 {
-    font-size: 3.5rem;
-  }
-  .section-title{
-    font-size: 2rem;
-  }
-  .text-content{
-    font-size: 1rem;
-  }
-}
-
-.intro .row, .sharing .row, .expo-campus .row, .simulasi .row,.sponsor .row{
-    padding: 2em 0 !important;
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .text-content {
+        font-size: 1rem;
+    }
 }
 
-.form-daftar{
-  background: url('../../img/svg/bg-daftar.svg');
-  background-size: cover;
+.intro .row,
+.sharing .row,
+.expo-campus .row,
+.simulasi .row,
+.sponsor .row {
+    padding: 1.25em 0 !important;
 }
 
-#btn-daftar{
-  font-family: Product-Sans-Bold;
-  font-size: 24px;
-  color: rgba(57, 160, 162, 1) !important;
-  background-color: rgba(255, 255, 255, .75);
-  padding: 12px 5rem;
-  border-radius: 6px;
-  transition: all .2s ease;
+.form-daftar {
+    background: url("../../img/svg/bg-daftar.svg");
+    background-size: cover;
 }
 
-#btn-daftar:hover{
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 12px 2px rgba(255, 255, 255, .8);
+#btn-daftar {
+    font-family: Product-Sans-Bold;
+    font-size: 24px;
+    color: rgba(57, 160, 162, 1) !important;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 12px 5rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+#btn-daftar:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 12px 2px rgba(255, 255, 255, 0.8);
 }
