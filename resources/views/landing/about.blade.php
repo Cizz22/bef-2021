@@ -33,11 +33,11 @@
           <h1 class="section-title">Kenalan Yuk!</h1>
         </div>
         <div class="row">
-          <img src="img/svg/logo-bef.svg" class="" height="250px" alt="logo-bef">
+          <img src="img/svg/logo-bef.svg" class="" height="150px" alt="logo-bef">
         </div>
         <div class="row">
-          <p class="text-center text-content">Brebes Education Fair (BEF) merupakan kegiatan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Kabupaten Brebes dari berbagai perguruan tinggi di Indonesia. Brebes Education ini sudah ada sejak tahun 2013, yang berarti tahun ini memasuki tahun ke-10 hadirnya BEF di Kabupaten Brebes.</p>
-            <p class="text-center text-content">
+          <p class="px-5 text-center text-content">Brebes Education Fair (BEF) merupakan kegiatan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Kabupaten Brebes dari berbagai perguruan tinggi di Indonesia. Brebes Education ini sudah ada sejak tahun 2013, yang berarti tahun ini memasuki tahun ke-10 hadirnya BEF di Kabupaten Brebes.</p>
+            <p class="px-5 text-center text-content">
                 "One Decision for Realizing Your Dreams" atau "ONE DECADE" sebagai tema BEF 2022 dengan harapan BEF yang ke-1 Dekade ini menjadi sahabat berjuang adik-adik SMA/sederajat yang membantu untuk menentukan keputusan demi mewujudkan impian sehingga dapat menjadi manusia unggul demi kemajuan Brebes pada masa mendatang.</p>
         </div>
         <div class="row">
@@ -166,7 +166,7 @@
           <h1 class="section-title">Try Out UTBK</h1>
         </div>
         <div class="row">
-          <p class="text-center text-content">BEF membantu memfasilitasi dengan mengadakan simulasi untuk pelajar SMA/MA/K/sederajat dalam mempersiapkan Ujian Tulis Berbasis Komputer (UTBK) yang menjadi syarat masuk perguruan tinggi melalui jalur SBMPTN. Try out ini dibagi menjadi dua kategori yaitu SAINTEK dan SOSHUM dengan pelaksanakan sebagaimana UTBK yang sebenarnya. Pelaksanaan try out UTBK serta pembahasan soal bekerjasama dengan Lembaga Bimbingan Belajar terpercaya yang berkompeten di bidangnya.</p>
+          <p class="px-5 text-center text-content">BEF membantu memfasilitasi dengan mengadakan simulasi untuk pelajar SMA/MA/K/sederajat dalam mempersiapkan Ujian Tulis Berbasis Komputer (UTBK) yang menjadi syarat masuk perguruan tinggi melalui jalur SBMPTN. Try out ini dibagi menjadi dua kategori yaitu SAINTEK dan SOSHUM dengan pelaksanakan sebagaimana UTBK yang sebenarnya. Pelaksanaan try out UTBK serta pembahasan soal bekerjasama dengan Lembaga Bimbingan Belajar terpercaya yang berkompeten di bidangnya.</p>
         </div>
         <div class="row">
           <a href="#" class="main-btn">Kepoin Lebih Lanjut!</a>
@@ -192,12 +192,12 @@
 
     <section class="sponsor">
       <div class="container">
-        <div class="my-5 row">
+        <div class="my-5 row" data-aos="fade-up" data-aos-duration="1500">
           <div class="col">
             <h1 class="text-center section-title">Media Partner & Sponsorship</h1>
           </div>
         </div>
-        <div class="py-5 text-center row">
+        <div class="py-5 text-center row" data-aos="fade-up" data-aos-duration="1500">
           <div class="col-md">
               <img src="img/svg/logo-bef.svg" alt="">
           </div>
