@@ -35,5 +35,8 @@ Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard.index');
         Route::get('/listpeserta', [PesertaListController::class, 'index'])->name('admin.peserta.index');
         Route::get('/konfirmasibayar', [PesertaListController::class, 'konfirmasibayar'])->name('admin.konfirmasibayar.index');
+        Route::get('/detailPeserta/{id}', [PesertaListController::class,'detailPeserta'])->name('admin.detailPeserta');
+        Route::get('/terimaPembayaran/{id}', [PesertaListController::class,'terimaPembayaran']);
+        Route::get('/tolakPembayaran/{id}', [PesertaListController::class,'tolakPembayaran']);
     });
 });

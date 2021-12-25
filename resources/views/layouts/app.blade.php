@@ -15,9 +15,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
     @stack('css')
     <!-- js -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -124,29 +124,28 @@
     </div>
 
    @stack('js')
+   <script>
+    @if(session()->has('success'))
 
-    <script>
-        @if(session()->has('success'))
+    Swal.fire({
+        icon: 'success',
+        title: 'BERHASIL!',
+        text: '{{ session('success') }}',
+        showConfirmButton: false,
+        timer: 3000
+    })
 
-        Swal.fire({
-            icon: 'success',
-            title: 'BERHASIL!',
-            text: '{{ session('success') }}',
-            showConfirmButton: false,
-            timer: 3000
-        })
+    @elseif(session()->has('error'))
 
-        @elseif(session()->has('error'))
+    Swal.fire({
+        icon: 'error',
+        text: 'GAGAL!',
+        title: '{{ session('error') }}',
+        showConfirmButton: false,
+        timer: 3000
+    })
 
-        Swal.fire({
-            icon: 'error',
-            text: 'GAGAL!',
-            title: '{{ session('error') }}',
-            showConfirmButton: false,
-            timer: 3000
-        })
-
-        @endif
-    </script>
+    @endif
+</script>
 </body>
 </html>
