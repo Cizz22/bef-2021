@@ -1,4 +1,4 @@
-@extends('landing.main')
+@extends('landing.main',[''])
 
 @section('stylesheet')
 <link rel="stylesheet" href="{{ asset('css/landing/blogs.css') }}">
@@ -31,7 +31,26 @@
               </a>
             </div>
         @empty
-             <div class="text-center col-lg-4 d-flex align-items-stretch justify-content-center">
+        <div class="content">
+            <div class="pt-3 row">
+                <div class="text-center col-12 d-flex justify-content-center">
+                    <img src="{{ asset('img/svg/logo-bef.svg') }}" alt="logo-bef-2021" width="225px">
+                </div>
+            </div>
+            <div class="pt-3 row">
+                <div class="text-center col-12 d-flex justify-content-center">
+                    <h1>COMING SOON</h1>
+                </div>
+            </div>
+            <div class="pt-3 row">
+                <div class="text-center col-12 d-flex justify-content-center">
+                    <p>
+                        Nantikan persembahan selanjutnya dari kami
+                    </p>
+                </div>
+            </div>
+        </div>
+             {{-- <div class="text-center col-lg-4 d-flex align-items-stretch justify-content-center">
             <a href="#" class="link-blogs">
               <div class="card" style="width: 20rem">
                 <img src="{{ asset('img/png/tugu-its.png') }}" class="card-img-top" alt="..." />
@@ -107,7 +126,7 @@
                   </div>
               </div>
             </a>
-          </div>
+          </div> --}}
         @endforelse
         </div>
       </div>
