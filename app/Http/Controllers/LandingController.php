@@ -99,7 +99,7 @@ class LandingController extends Controller
 
         if ($peserta) {
             //redirect dengan pesan sukses
-            return redirect()->route('landing.form')->with(['success' => 'Data Berhasil Disimpan!']);
+            return redirect()->route('landing.form')->with(['success' => 'Pendaftaran Berhasil']);
         } else {
             //redirect dengan pesan error
             return redirect()->route('landing.form')->with(['error' => 'Data Gagal Disimpan!']);

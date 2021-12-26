@@ -18,7 +18,7 @@
             <a class="nav-link" href="/coming-soon">Kontak</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/blogs">Blogs</a>
+            <a class="nav-link {{Route::is('landing.blogs') ? 'active' : null}}" href="/blogs">Blogs</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{Route::is('landing.form') ? 'active' : null}}" href="{{route('landing.form')}}">Daftar</a>

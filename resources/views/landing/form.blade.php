@@ -10,6 +10,11 @@
         <h1 class="pt-5 mt-5 text-center">Form Pendaftaran BEF</h1>
         <form action="{{route('landing.form-store')}}" method="POST" enctype="multipart/form-data" class="pt-5 shadow p-md-5 pt-sm-0">
             @csrf
+            @if($errors->any())
+            <div class="mt-2 alert alert-danger">
+                    Terjadi kesalahan! Harap cek ulang isian Form Pendaftaran
+            </div>
+            @endif
             <div class="mb-3 form-group">
               <label for="nama_lengkap" class="form-label">Nama Lengkap</label>
               <input type="text" class="form-control @error('name') is-invalid @enderror" id="nama_lengkap" name="name" value="{{ old('name') }}" placeholder="Nama Lengkap">
@@ -209,6 +214,7 @@
 @endsection
 
 @section('script')
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
     <script>
@@ -221,5 +227,28 @@
           sortField: 'text'
       });
   });
+    </script>
+      <script>
+        @if(session()->has('success'))
+
+        Swal.fire({
+            icon: 'success',
+            title: 'BERHASIL!',
+            text: '{{ session('success') }}',
+            showConfirmButton: false,
+            timer: 3000
+        })
+
+        @elseif(session()->has('error'))
+
+        Swal.fire({
+            icon: 'error',
+            text: 'GAGAL!',
+            title: '{{ session('error') }}',
+            showConfirmButton: false,
+            timer: 3000
+        })
+
+        @endif
     </script>
 @endsection
