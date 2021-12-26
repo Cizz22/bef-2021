@@ -53,29 +53,29 @@
         </div>
         <div class="row">
           <div class="text-center col-lg">
-            <img src="img/svg/logo-bef.svg" alt="">
-            <h4>Ghifary Muhammad</h4>
-            <p>Sistem Informasi ITS</p>
+            <img src="{{ asset('img/png/unknown_man.png') }}" width="150px" alt="">
+            <h4>Coming Soon</h4>
+            <p>...</p>
           </div>
           <div class="text-center col-lg">
-            <img src="img/svg/logo-bef.svg" alt="">
-            <h4>Ghifary Muhammad</h4>
-            <p>Sistem Informasi ITS</p>
+            <img src="{{ asset('img/png/unknown_woman.png') }}" width="150px" alt="">
+            <h4>Coming Soon</h4>
+            <p>...</p>
           </div>
           <div class="text-center col-lg">
-            <img src="img/svg/logo-bef.svg" alt="">
-            <h4>Ghifary Muhammad</h4>
-            <p>Sistem Informasi ITS</p>
+            <img src="{{ asset('img/png/unknown_man.png') }}" width="150px" alt="">
+            <h4>Coming Soon</h4>
+            <p>...</p>
           </div>
           <div class="text-center col-lg">
-            <img src="img/svg/logo-bef.svg" alt="">
-            <h4>Ghifary Muhammad</h4>
-            <p>Sistem Informasi ITS</p>
+            <img src="{{ asset('img/png/unknown_woman.png') }}" width="150px" alt="">
+            <h4>Coming Soon</h4>
+            <p>...</p>
           </div>
           <div class="text-center col-lg">
-            <img src="img/svg/logo-bef.svg" alt="">
-            <h4>Ghifary Muhammad</h4>
-            <p>Sistem Informasi ITS</p>
+            <img src="{{ asset('img/png/unknown_man.png') }}" width="150px" alt="">
+            <h4>Coming Soon</h4>
+            <p>...</p>
           </div>
         </div>
       </div>

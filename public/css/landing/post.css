@@ -1,0 +1,19 @@
+@import url(global.css);
+
+h1{
+    background: linear-gradient(93.29deg, #d4f0bc -2.79%, #f3b9b3 108.43%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.post-img{
+    width: 993px !important;
+}
+
+@media (min-width:992px) {
+    .post-text{
+        padding: 1em 11em ;
+    }
+}
+
