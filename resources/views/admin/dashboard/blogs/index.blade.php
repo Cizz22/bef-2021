@@ -84,58 +84,110 @@
         })
 
     </script>
+
+<script>
+    //ajax delete
+async function destroy(id) {
+        const token = $("meta[name='csrf-token']").attr("content");
+        Swal.fire({
+            title: 'APAKAH KAMU YAKIN ?',
+            text: "Ingin Menghapus Artikel Ini!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'BATAL',
+            confirmButtonText: 'YA, HAPUS!',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                //ajax delete
+                jQuery.ajax({
+                    url: `blogs/delete/${id}`,
+                    data: {
+                        "id": id,
+                        "_token": token
+                    },
+                    type: 'DELETE',
+                    success: function (response) {
+                        if (response.status == "success") {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'BERHASIL!',
+                                text: 'DATA BERHASIL DIHAPUS!',
+                                showConfirmButton: false,
+                                timer: 3000
+                            }).then(function () {
+                                location.reload();
+                            });
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'GAGAL!',
+                                text: 'DATA GAGAL DIHAPUS!',
+                                showConfirmButton: false,
+                                timer: 3000
+                            }).then(function () {
+                                location.reload();
+                            });
+                        }
+                    }
+                });
+            }
+        })
+    }
+// </script>
 @endpush
 <script>
-//     //ajax delete
-// async function destroy(id) {
-//         const token = $("meta[name='csrf-token']").attr("content");
+    //ajax delete
+async function destroy(id) {
+        const token = $("meta[name='csrf-token']").attr("content");
 
-//         Swal.fire({
-//             title: 'APAKAH KAMU YAKIN ?',
-//             text: "INGIN MENGHAPUS DATA INI!",
-//             icon: 'warning',
-//             showCancelButton: true,
-//             confirmButtonColor: '#3085d6',
-//             cancelButtonColor: '#d33',
-//             cancelButtonText: 'BATAL',
-//             confirmButtonText: 'YA, HAPUS!',
-//         }).then((result) => {
-//             if (result.isConfirmed) {
-//                 //ajax delete
-//                 jQuery.ajax({
-//                     url: `/admin/campaign/${id}`,
-//                     data: {
-//                         "id": id,
-//                         "_token": token
-//                     },
-//                     type: 'DELETE',
-//                     success: function (response) {
-//                         if (response.status == "success") {
-//                             Swal.fire({
-//                                 icon: 'success',
-//                                 title: 'BERHASIL!',
-//                                 text: 'DATA BERHASIL DIHAPUS!',
-//                                 showConfirmButton: false,
-//                                 timer: 3000
-//                             }).then(function () {
-//                                 location.reload();
-//                             });
-//                         } else {
-//                             Swal.fire({
-//                                 icon: 'error',
-//                                 title: 'GAGAL!',
-//                                 text: 'DATA GAGAL DIHAPUS!',
-//                                 showConfirmButton: false,
-//                                 timer: 3000
-//                             }).then(function () {
-//                                 location.reload();
-//                             });
-//                         }
-//                     }
-//                 });
-//             }
-//         })
-//     }
+        Swal.fire({
+            title: 'APAKAH KAMU YAKIN ?',
+            text: "INGIN MENGHAPUS DATA INI!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'BATAL',
+            confirmButtonText: 'YA, HAPUS!',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                //ajax delete
+                jQuery.ajax({
+                    url: `/admin/campaign/${id}`,
+                    data: {
+                        "id": id,
+                        "_token": token
+                    },
+                    type: 'DELETE',
+                    success: function (response) {
+                        if (response.status == "success") {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'BERHASIL!',
+                                text: 'DATA BERHASIL DIHAPUS!',
+                                showConfirmButton: false,
+                                timer: 3000
+                            }).then(function () {
+                                location.reload();
+                            });
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'GAGAL!',
+                                text: 'DATA GAGAL DIHAPUS!',
+                                showConfirmButton: false,
+                                timer: 3000
+                            }).then(function () {
+                                location.reload();
+                            });
+                        }
+                    }
+                });
+            }
+        })
+    }
 // </script>
 
 @endsection

@@ -18,7 +18,7 @@ class BlogsController extends Controller
             ->setRowClass('tabletr overflow-x-hidden')
             ->addColumn('action', function($data){
                 $button =  ' <div class="flex space-x-1 justify-evenly"> <a href=blogs/edit/'.$data->id.'><button id="detail-button" @click="showModal1 = true" class="p-1 text-blue-600 hover:bg-blue-600 hover:text-white rounded" title="Lihat Detail"><i class="fas fa-edit"></i></button></a>';
-                $button .= '<button id="detail-button" @click="showModal1 = true" data-id='.$data->id.' class="p-1 text-red-600 hover:bg-red-600 hover:text-white rounded" title="Hapus"><i class="fas fa-trash"></i></button></div>';
+                $button .= '<button id="detail-button" @click="showModal1 = true" onclick="destroy('.$data->id.')" class="p-1 text-red-600 hover:bg-red-600 hover:text-white rounded" title="Hapus"><i class="fas fa-trash"></i></button></div>';
                 return $button;
             })
             ->rawColumns(['action'])
@@ -116,7 +116,25 @@ class BlogsController extends Controller
            }
     }
 
-      
+
+    }
+
+    public function delete($id){
+        $blog = Blog::findOrFail($id);
+        Storage::disk('local')->delete('public/blogs/'.basename($blog->featured_image_path));
+
+
+        try {
+            $blog->delete();
+            return response()->json([
+                'status' => 'success'
+            ]);
+        } catch (QueryException $e) {
+            return response()->json([
+                'status' => 'error',
+                'message' => $e
+            ]);
+        }
     }
 
 }

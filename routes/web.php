@@ -45,5 +45,6 @@ Route::prefix('admin')->group(function () {
         Route::post('/blogs/store', [BlogsController::class,'store'])->name('admin.blogs.store');
         Route::get('/blogs/edit/{id}', [BlogsController::class,'edit'])->name('admin.blogs.edit');
         Route::put('/blogs/update/{id}', [BlogsController::class,'update'])->name('admin.blogs.update');
+        Route::delete('/blogs/delete/{id}', [BlogsController::class,'delete'])->name('admin.blogs.delete');
     });
 });
