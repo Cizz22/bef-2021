@@ -24,7 +24,7 @@
                             {{$blog->title}}
                         </h5>
                         <p class="my-3 text-center card-text">
-                            {!! \Illuminate\Support\Str::limit($blog->content, 50, $end='...') !!}
+                            {!! \Illuminate\Support\Str::limit($blog->content, 100, $end='...') !!}
                         </p>
                     </div>
                 </div>
