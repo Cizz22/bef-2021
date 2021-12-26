@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Peserta;
 use App\Models\Universitas;
 use Illuminate\Support\Facades\DB;
@@ -24,8 +25,18 @@ class LandingController extends Controller
 
     public function showBlogs()
     {
+        $blogs = Blog::where('status','=', 'published')->paginate(6);
         return view('landing.blogs', [
-            "title" => "Blogs"
+            "title" => "Blogs",
+            "blogs" => $blogs
+        ]);
+    }
+
+    public function showPost($id){
+        $post = Blog::find($id);
+        return view('landing.post', [
+            "title" => $post->title,
+            "post" => $post
         ]);
     }
 
