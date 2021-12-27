@@ -35,9 +35,11 @@ class BlogsController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'content' => 'required',
-            'image' => 'image|mimes:jpeg,jpg,png|max:2000',
+            'image' => 'required|image|mimes:jpeg,jpg,png|max:2000',
             'status' => 'required'
         ]);
+
+        $content = trim($request->content);
 
          //upload image
         $image = $request->file('image');
@@ -47,7 +49,7 @@ class BlogsController extends Controller
         Blog::create([
             'featured_image_path'  => $image->hashName(),
             'title'   => $request->title,
-            'content' => $request->content,
+            'content' => $content,
             'meta_title' =>$request->meta_title,
             'meta_desc' =>$request->meta_desc,
             'meta_keyword' => $request->meta_keyword,
@@ -75,12 +77,12 @@ class BlogsController extends Controller
         ]);
 
         $blog = Blog::findOrFail($id);
-
+        $content = trim($request->content);
         if(!$request->file('image')){
             try {
                 $blog->update([
                     'title'   => $request->title,
-                    'content' => $request->content,
+                    'content' => $content,
                     'meta_title' =>$request->meta_title,
                     'meta_desc' =>$request->meta_desc,
                     'meta_keyword' => $request->meta_keyword,
@@ -103,7 +105,7 @@ class BlogsController extends Controller
             $blog->update([
                 'featured_image_path'  => $image->hashName(),
                 'title'   => $request->title,
-                'content' => $request->content,
+                'content' => $content,
                 'meta_title' =>$request->meta_title,
                 'meta_desc' =>$request->meta_desc,
                 'meta_keyword' => $request->meta_keyword,

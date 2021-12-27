@@ -36,7 +36,7 @@
 
                     <label class="block mb-3" for="">
                         <span class="text-gray-700 font-semibold">Content</span>
-                        <textarea name="content" class="bg-gray-100 form-input mt-1 p-3 block w-full rounded-md focus:bg-white" id=""></textarea>
+                        <textarea name="content" id="content" class="bg-gray-100 form-input mt-1 p-3 block w-full rounded-md focus:bg-white" id=""></textarea>
                         @error('content')
                         <div class="w-full bg-red-300 shadow-md rounded-md overflow-hidden mt-2">
                             <div class="px-4 py-2">
