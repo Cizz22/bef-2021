@@ -2,7 +2,15 @@
 
 @section('stylesheet')
 <link rel="stylesheet" href="{{ asset('css/landing/blogs.css') }}">
+<style>
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-row-gap: 30px;
+}
+
+</style>
 @endsection
 
 

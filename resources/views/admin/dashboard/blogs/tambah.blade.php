@@ -109,6 +109,7 @@
 <script>
 tinymce.init({
     selector: 'textarea',
+    plugins: 'link',
  });
 </script>
 @endsection
