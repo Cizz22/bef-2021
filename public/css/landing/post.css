@@ -7,6 +7,17 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 
+.fa-arrow-left{
+    transition: all .3s ease;
+}
+.fa-arrow-left:hover{
+    transform: scale(1.125);
+}
+
+.back-btn:hover{
+    color: white;
+}
+
 .post-img{
     width: 993px !important;
 }

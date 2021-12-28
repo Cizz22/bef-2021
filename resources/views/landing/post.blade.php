@@ -17,13 +17,14 @@
 <main id="main">
 
     <section class="blog-page">
-        <div class="container text-center">
+        <div class="container">
             <div class="my-5 row">
+                <a href="/blogs" title="Kembali" class="fs-1 back-btn"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
                 <h1 class="text-center title">
                  {{$post->title}}
                 </h1>
             </div>
-            <div class="my-5 row">
+            <div class="my-5 text-center row">
                 <p><strong>Admin Bef</strong></p>
                 <p>{{ Carbon\Carbon::parse($post->created_at)->translatedFormat('d F Y') }}</p>
             </div>
