@@ -1,6 +1,4 @@
 @extends('landing.main',[''])
-@section('desc'){{$post->meta_desc}}@endsection
-@section('keyword'){{$post->meta_keyword}}@endsection
 
 @section('stylesheet')
 <link rel="stylesheet" href="{{ asset('css/landing/post.css') }}">
