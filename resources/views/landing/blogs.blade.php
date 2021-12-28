@@ -6,8 +6,17 @@
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    grid-row-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px;
+}
+.card{
+    width: 20rem;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width:15rem ;
+  }
 }
 
 </style>
@@ -18,7 +27,7 @@
 <main id="main">
 
     <section class="blogs">
-      <div class="container">
+      <div class="container overflow-hidden">
         <h1 class="pb-5 text-center section-title">
           BEF BLOGS
         </h1>
@@ -27,7 +36,7 @@
            @foreach ($blogs as $blog)
            <div class="text-center d-flex align-items-stretch justify-content-center">
             <a href="{{route('landing.post', $blog->id)}}" class="link-blogs">
-              <div class="card d-flex" style="width: 20rem">
+              <div class="card d-flex">
                 <img src="{{ asset('storage/blogs/'.$blog->featured_image_path.'') }}" class="card-img-top" alt="{{$blog->title}}" />
                 <div class="card-body d-flex flex-column">
                       <h5 class="mb-3 card-title">
