@@ -23,38 +23,35 @@
       <nav>
         <div class="row">
           <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
-            <a href="#" class="my-2 text-center nav-link w-100 my-lg-0">Sharing & Motivation</a>
+            <a href="/coming-soon" class="my-2 text-center nav-link w-100 my-lg-0">Sharing & Motivation</a>
           </div>
           <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
-            <a href="#" class="my-2 text-center nav-link w-100 my-lg-0">Simulasi UTBK</a>
+            <a href="/coming-soon" class="my-2 text-center nav-link w-100 my-lg-0">Simulasi UTBK</a>
           </div>
           <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
-            <a href="#" class="my-2 text-center nav-link w-100 my-lg-0">Expo Kampus</a>
+            <a href="/coming-soon" class="my-2 text-center nav-link w-100 my-lg-0">Expo Kampus</a>
           </div>
           <div class="col-lg d-flex justify-content-center align-items-center">
-            <a href="#" class="my-2 text-center nav-link w-100 my-lg-0">Blog</a>
+            <a href="blogs" class="my-2 text-center nav-link w-100 my-lg-0">Blog</a>
           </div>
           <div class="col-lg-4 col-12">
-            <div class="p-0 text-center container-fluid text-lg-start">
+            <div class="p-0 text-center container-fluid text-lg-end">
               <div class="row">
                 <h4>Temukan Kami di Sosial Media!</h4>
               </div>
               <div class="row">
                 <div class="col">
-                  <a href="#">
+                  <a href="https://www.instagram.com/bef1decade/">
                     <i class="fab fa-instagram social-link" aria-hidden="true"></i>
                   </a>
-                  <a href="#">
-                    <i class="fab fa-twitter social-link" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
+                  <a href="https://www.youtube.com/channel/UCQK0CVkk7e2Ws4pHMySarlw">
                     <i class="fab fa-youtube social-link" aria-hidden="true"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://vt.tiktok.com/ZSeudRvwR/">
                     <i class="fab fa-tiktok social-link"></i>
                   </a>
-                  <a href="#">
-                    <i class="fab fa-line social-link"></i>
+                  <a href="https://wa.me/6285201106263">
+                    <i class="fab fa-whatsapp social-link"></i>
                   </a>
                 </div>
               </div>
