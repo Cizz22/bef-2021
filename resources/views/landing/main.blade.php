@@ -46,8 +46,8 @@
     <script>
       AOS.init();
     </script>
-    <script async src="https://www.instagram.com/embed.js"></script>
-    <script async src="https://www.tiktok.com/embed.js"></script>
+    {{-- <script async src="https://www.instagram.com/embed.js"></script>
+    <script async src="https://www.tiktok.com/embed.js"></script> --}}
     <script src="{{ asset('js/landing/script.js') }}"></script>
     @yield('script')
   </body>
