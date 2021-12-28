@@ -35,7 +35,7 @@
         <div class="my-5 grid">
            @foreach ($blogs as $blog)
            <div class="text-center d-flex align-items-stretch justify-content-center">
-            <a href="{{route('landing.post', $blog->id)}}" class="link-blogs">
+            <a href="{{route('landing.post', $blog->meta_title)}}" class="link-blogs">
               <div class="card d-flex">
                 <img src="{{ asset('storage/blogs/'.$blog->featured_image_path.'') }}" class="card-img-top" alt="{{$blog->title}}" />
                 <div class="card-body d-flex flex-column">

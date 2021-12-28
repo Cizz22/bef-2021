@@ -46,19 +46,6 @@
                     @enderror
                     </label>
 
-
-                    <label class="block mb-3" for="">
-                        <span class="text-gray-700 font-semibold">Meta Title</span>
-                        <input type="text" name="meta_title" class="bg-gray-100 outline-none form-input mt-1 block w-full rounded-md focus:bg-white" id="" value="{{ old('title') }}">
-                        @error('title')
-                            <div class="w-full bg-red-300 shadow-md rounded-md overflow-hidden mt-2">
-                                <div class="px-4 py-2">
-                                    <p class="text-gray-600 text-sm">{{$message}}</p>
-                                </div>
-                            </div>
-                        @enderror
-                    </label>
-
                     <label class="block mb-3" for="">
                         <span class="text-gray-700 font-semibold">Meta Keywords (bila lebih dari satu pisahkan dengan koma)</span>
                         <input type="text" name="meta_keyword" class="bg-gray-100 outline-none form-input mt-1 block w-full rounded-md focus:bg-white" id="" value="{{ old('title') }}">

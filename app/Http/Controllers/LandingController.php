@@ -32,8 +32,8 @@ class LandingController extends Controller
         ]);
     }
 
-    public function showPost($id){
-        $post = Blog::find($id);
+    public function showPost($slug){
+        $post = Blog::where('meta_title', $slug)->first();
         return view('landing.post', [
             "title" => $post->title,
             "post" => $post

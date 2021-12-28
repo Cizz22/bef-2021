@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 //Landing Route
 Route::get('/', [LandingController::class, 'index'])->name('landing.about');
 Route::get('/blogs', [LandingController::class, 'showBlogs'])->name('landing.blogs');
-Route::get('/post/{id}', [LandingController::class, 'showPost'])->name('landing.post');
+Route::get('/post/{slug}', [LandingController::class, 'showPost'])->name('landing.post');
 Route::get('/coming-soon', [LandingController::class, 'soon'])->name('landing.coming_soon');
 Route::get('/form', [LandingController::class, 'showForm'])->name('landing.form');
 Route::post('/store', [LandingController::class, 'store'])->name('landing.form-store');

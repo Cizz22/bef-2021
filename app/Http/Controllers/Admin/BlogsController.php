@@ -7,6 +7,7 @@ use App\Models\Blog;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class BlogsController extends Controller
 {
@@ -36,7 +37,7 @@ class BlogsController extends Controller
             'title' => 'required',
             'content' => 'required',
             'image' => 'required|image|mimes:jpeg,jpg,png|max:2000',
-            'status' => 'required'
+            'status' => 'required',
         ]);
 
         $content = trim($request->content);
@@ -50,7 +51,7 @@ class BlogsController extends Controller
             'featured_image_path'  => $image->hashName(),
             'title'   => $request->title,
             'content' => $content,
-            'meta_title' =>$request->meta_title,
+            'meta_title' =>Str::slug($request->title, '-'),
             'meta_desc' =>$request->meta_desc,
             'meta_keyword' => $request->meta_keyword,
             'status' => $request->status,
@@ -83,7 +84,7 @@ class BlogsController extends Controller
                 $blog->update([
                     'title'   => $request->title,
                     'content' => $content,
-                    'meta_title' =>$request->meta_title,
+                    'meta_title' =>Str::slug($request->title, '-'),
                     'meta_desc' =>$request->meta_desc,
                     'meta_keyword' => $request->meta_keyword,
                     'status' => $request->status,
@@ -106,7 +107,7 @@ class BlogsController extends Controller
                 'featured_image_path'  => $image->hashName(),
                 'title'   => $request->title,
                 'content' => $content,
-                'meta_title' =>$request->meta_title,
+                'meta_title' =>Str::slug($request->title, '-'),
                 'meta_desc' =>$request->meta_desc,
                 'meta_keyword' => $request->meta_keyword,
                 'status' => $request->status,
