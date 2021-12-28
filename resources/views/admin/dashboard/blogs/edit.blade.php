@@ -37,7 +37,7 @@
 
                     <label class="block mb-3" for="">
                         <span class="text-gray-700 font-semibold">Content</span>
-                        <textarea name="content" class="bg-gray-100 form-input mt-1 p-3 block w-full rounded-md focus:bg-white" id="">{!! $blog->content !!}</textarea>
+                        <textarea name="content" id="content" class="bg-gray-100 form-input mt-1 p-3 block w-full rounded-md focus:bg-white" id="">{!! $blog->content !!}</textarea>
                         @error('content')
                         <div class="w-full bg-red-300 shadow-md rounded-md overflow-hidden mt-2">
                             <div class="px-4 py-2">
@@ -96,7 +96,7 @@
 </main>
 <script>
 tinymce.init({
-    selector: 'textarea',
+  selector: 'textarea#content',
   plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons',
   imagetools_cors_hosts: ['picsum.photos'],
   menubar: 'file edit view insert format tools table help',

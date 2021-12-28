@@ -36,6 +36,8 @@ class LandingController extends Controller
         $post = Blog::where('meta_title', $slug)->first();
         return view('landing.post', [
             "title" => $post->title,
+            "meta_desc" =>   $post->meta_desc,
+            "meta_keyword" =>  $post->meta_keyword,
             "post" => $post
         ]);
     }
