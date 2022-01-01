@@ -53,6 +53,9 @@
                   <a href="https://wa.me/6285201106263">
                     <i class="fab fa-whatsapp social-link"></i>
                   </a>
+                  <a href="https://line.me/ti/p/nafamyka">
+                    <i class="fab fa-line social-link"></i>
+                  </a>
                 </div>
               </div>
             </div>
