@@ -21,7 +21,7 @@
             <a class="nav-link {{Route::is('landing.blogs') ? 'active' : null}}" href="/blogs">Blogs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{Route::is('landing.form') ? 'active' : null}}" href="{{route('landing.pick-form')}}">Daftar</a>
+                <a class="nav-link {{Route::is('landing.form') || Route::is('landing.pick-form')  || Route::is('landing.form-mahasiswa')  ? 'active' : null}}" href="{{route('landing.pick-form')}}">Daftar</a>
             </li>
         </ul>
     </div>
