@@ -12,9 +12,9 @@
         <div class="row d-lg-none d-block">
             <div class="pesan-mobile">
               <h5 class="pb-4 text-center">Apa yang ingin kamu sampaikan?</h5>
-              <form action="#">
+              <form action="{{route('landing.contact')}}" method="get">
                 <div class="mb-3 input-group">
-                  <input type="text" class="form-control" placeholder="Ketik disini">
+                  <input type="text" name="question" class="form-control" placeholder="Ketik disini">
                   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Kirim</button>
                 </div>
               </form>

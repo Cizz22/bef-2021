@@ -8,6 +8,7 @@ use App\Models\Universitas;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
 class LandingController extends Controller
 {
@@ -173,5 +174,17 @@ class LandingController extends Controller
         }
 
         // return redirect('/form')->with('success', 'Tambah Data Berhasil');
+    }
+
+    public function contact(Request $request){
+        Mail::send('email', [
+            'name' => 'Sender',
+            'email' => 'anonymous@email.com',
+            'comment' => $request->query('question') ],
+            function ($message) {
+                    $message->from('admin@brebesedufair.com');
+                    $message->to('admin@brebesedufair.com', 'Admin')
+                    ->subject('Your Website Contact Form');
+    });
     }
 }
