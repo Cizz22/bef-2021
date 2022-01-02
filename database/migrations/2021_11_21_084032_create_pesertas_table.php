@@ -20,17 +20,17 @@ class CreatePesertasTable extends Migration
             $table->string('whatsapp');
             $table->string('instagram');
             $table->string('school_name');
-            $table->string('address');
-            $table->enum('kelas', ["10", "11", "12"]);
-            $table->string('photo_path');
-            $table->enum('peminatan', ["Saintek", "Soshum", "Campuran"]);
+            $table->string('address')->nullable();
+            $table->enum('kelas', ["10", "11", "12"])->nullable();
+            $table->string('photo_path')->nullable();
+            $table->enum('peminatan', ["Saintek", "Soshum", "Campuran"])->nullable();
             $table->string('payment_proof_path')->nullable();
             $table->enum('payment_verif_status', ['Belum terverifikasi', 'Terverifikasi', 'Ditolak'])->default('Belum terverifikasi');
-            $table->string('info_source');
-            $table->unsignedBigInteger('ptn1_id');
-            $table->string('prodi_1');
-            $table->unsignedBigInteger('ptn2_id');
-            $table->string('prodi_2');
+            $table->string('info_source')->nullable();
+            $table->unsignedBigInteger('ptn1_id')->nullable();
+            $table->string('prodi_1')->nullable();
+            $table->unsignedBigInteger('ptn2_id')->nullable();
+            $table->string('prodi_2')->nullable();
             $table->timestamps();
         });
     }

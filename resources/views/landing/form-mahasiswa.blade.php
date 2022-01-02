@@ -10,7 +10,7 @@
         <h1 class="pt-5 mt-5 text-center">Form Pendaftaran BEF</h1>
         <form action="{{route('landing.form-store')}}" method="POST" enctype="multipart/form-data" class="pt-5 shadow p-md-5 pt-sm-0">
             @csrf
-            <input type="hidden" name="jenjang" value="SMA">
+            <input type="hidden" name="jenjang" value="Mahasiswa">
             @if($errors->any())
             <div class="mt-2 alert alert-danger">
                     Terjadi kesalahan! Harap cek ulang isian Form Pendaftaran
@@ -53,108 +53,9 @@
                 @enderror
             </div>
             <div class="mb-3 form-group">
-              <label for="foto" class="form-label">Foto Bebas Sopan</label>
-              <div class="card">
-                <div class="card-header">
-                  <input accept="image/*" type="file" class="form-control @error('photo_path') is-invalid @enderror" id="foto" name="photo_path" value="{{ old('photo_path') }}" onchange="preview('photo')">
-                </div>
-                <div class="text-center card-body">
-                    <img src="{{ asset('img/placeholder-image.png') }}" alt="foto-kamu" id="framephoto" class="img-fluid foto-kamu">
-                </div>
-              </div>
-                @error('photo_path')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-            </div>
-              <div class="mb-3 form-group">
-                <label for="alamat" class="form-label">Alamat</label>
-                <textarea class="form-control @error('address') is-invalid @enderror" id="alamat" name="address" rows="3" value="{{ old('address') }}" placeholder="Alamat"></textarea>
-                @error('address')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-            </div>
-            <div class="mb-3 form-group">
-              <label for="kelas" class="form-label">Kelas</label>
-              <select class="form-control @error('kelas') is-invalid @enderror" id="kelas" value="{{ old('kelas') }}" name="kelas">
-                <option value="">Pilih Kelas</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-                @error('kelas')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-            </div>
-            <div class="mb-3 form-group">
-                <label for="asal_sekolah" class="form-label">Asal Sekolah</label>
-                <input type="text" class="form-control @error('school_name') is-invalid @enderror" id="asal_sekolah" value="{{ old('school_name') }}" name="school_name" placeholder="Asal Sekolah">
-                @error('school_name')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-            </div>
-              <div class="mb-3 form-group">
-                <label for="peminatan" class="form-label">Peminatan</label>
-                <select class="form-control @error('peminatan') is-invalid @enderror" id="peminatan" value="{{ old('peminatan') }}" name="peminatan">
-                  <option value="">Pilih Peminatan</option>
-                  <option value="saintek">Saintek</option>
-                  <option value="soshum">Soshum</option>
-                  <option value="campuran">Campuran</option>
-                </select>
-                @error('peminatan')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-              </div>
-              <div class="mb-3 form-group">
-                <label for="ptn_pertama" class="form-label">PTN Pertama</label>
-                <select class="form-control @error('ptn1_id') is-invalid @enderror" id="ptn_pertama" name="ptn1_id">
-                    <option value="">Pilih PTN Pertama</option>
-                    @foreach($ptn as $p)
-                    <option value="{{ $p->id }}"> {{ $p->nama_universitas }}</option>
-                    @endforeach
-                </select>
-                @error('ptn1_id')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-              </div>
-              <div class="mb-3 form-group">
-                <label for="prodi_pertama" class="form-label">Pilihan Pertama</label>
-                <input type="text" class="form-control @error('prodi_1') is-invalid @enderror" id="prodi_pertama" value="{{ old('prodi_1') }}" name="prodi_1" placeholder="Program Studi Pertama">
-                @error('prodi_1')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-            </div>
-              <div class="mb-3 form-group">
-                <label for="ptn_kedua" class="form-label">PTN Kedua</label>
-                <select class="form-control @error('ptn2_id') is-invalid @enderror" id="ptn_kedua" name="ptn2_id">
-                    <option value="">Pilih PTN Kedua</option>
-                    @foreach($ptn as $p)
-                    <option value="{{ $p->id }}"> {{ $p->nama_universitas }}</option>
-                    @endforeach
-                </select>
-                @error('ptn2_id')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-              </div>
-              <div class="mb-3 form-group">
-                <label for="prodi_kedua" class="form-label">Pilihan Kedua</label>
-                <input type="text" class="form-control @error('prodi_2') is-invalid @enderror" id="prodi_kedua" value="{{ old('prodi_2') }}" name="prodi_2" placeholder="Program Studi Kedua">
-                @error('prodi_2')
+                <label for="asal_sekolah" class="form-label">Asal Universitas</label>
+                <input type="text" class="form-control @error('universitas_name') is-invalid @enderror" id="asal_universitas" value="{{ old('universitas_name') }}" name="universitas_name" placeholder="Asal Universitas">
+                @error('universitas_name')
                     <div class="mt-2 alert alert-danger">
                         {{ $message }}
                     </div>

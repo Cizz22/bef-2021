@@ -24,7 +24,8 @@ Route::get('/post/{slug}', [LandingController::class, 'showPost'])->name('landin
 Route::get('/coming-soon', [LandingController::class, 'soon'])->name('landing.coming_soon');
 Route::get('/form', [LandingController::class, 'showForm'])->name('landing.form');
 Route::post('/store', [LandingController::class, 'store'])->name('landing.form-store');
-
+Route::get('/pick-form', [LandingController::class,'pickForm'])->name('landing.pick-form');
+Route::get('/form-mahasiswa', [LandingController::class, 'showFormMahasiswa'])->name('landing.form-mahasiswa');
 
 //Admin Route
 Route::prefix('admin')->group(function () {
