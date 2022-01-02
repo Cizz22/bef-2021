@@ -11,7 +11,7 @@
   diselenggarakan oleh Himpunan Mahasiswa Kabupaten Brebes dari berbagai perguruan tinggi di
   Indonesia. Brebes Education ini sudah ada sejak tahun 2013, yang berarti tahun ini memasuki tahun
   ke-10 hadirnya BEF di Kabupaten Brebes." }}">
-  <meta name="keywords" content="{{ $meta_keyword ?? "BEF , ITS, TryOut','brebes','SMA" }}">
+  <meta name="keywords" content="{{ $meta_keyword ?? "BEF , ITS, TryOut, brebes, SMA, Brebes Education Fair, brebes education fair, Brebes, bef, tryout bef, Education Fair, education fair, bef 1 dekade, bef 2022, BEF 2022" }}">
   <meta name="author" content="BEF 2021">
 
   <!-- Bootstrap CSS -->
