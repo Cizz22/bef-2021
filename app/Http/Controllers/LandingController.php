@@ -151,7 +151,8 @@ class LandingController extends Controller
                 'prodi_1' => $request->prodi_1,
                 'ptn2_id' => $request->ptn2_id,
                 'prodi_2' => $request->prodi_2,
-                'payment_proof_path' => $payment_proof->hashName()
+                'payment_proof_path' => $payment_proof->hashName(),
+                'jenjang' => 'SMA'
             ]);
         }else{
             $peserta = Peserta::create([
@@ -161,7 +162,8 @@ class LandingController extends Controller
                 'instagram' => $request->instagram,
                 'school_name' => $request->universitas_name,
                 'info_source' => implode(',', $request->info_source),
-                'payment_proof_path' => $payment_proof->hashName()
+                'payment_proof_path' => $payment_proof->hashName(),
+                'jenjang' => 'Mahasiswa'
             ]);
         }
 
