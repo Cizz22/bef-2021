@@ -41,19 +41,19 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <a href="https://www.instagram.com/bef1decade/">
+                  <a href="https://www.instagram.com/bef1decade/" target="_blank">
                     <i class="fab fa-instagram social-link" aria-hidden="true"></i>
                   </a>
-                  <a href="https://www.youtube.com/channel/UCQK0CVkk7e2Ws4pHMySarlw">
+                  <a href="https://www.youtube.com/channel/UCQK0CVkk7e2Ws4pHMySarlw" target="_blank">
                     <i class="fab fa-youtube social-link" aria-hidden="true"></i>
                   </a>
-                  <a href="https://vt.tiktok.com/ZSeudRvwR/">
+                  <a href="https://vt.tiktok.com/ZSeudRvwR/" target="_blank">
                     <i class="fab fa-tiktok social-link"></i>
                   </a>
-                  <a href="https://wa.me/6285201106263">
+                  <a href="https://wa.me/6285201106263" target="_blank">
                     <i class="fab fa-whatsapp social-link"></i>
                   </a>
-                  <a href="https://line.me/ti/p/nafamyka">
+                  <a href="https://line.me/ti/p/nafamyka" target="_blank">
                     <i class="fab fa-line social-link"></i>
                   </a>
                 </div>
