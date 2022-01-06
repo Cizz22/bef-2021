@@ -152,7 +152,7 @@ class LandingController extends Controller
                 'ptn2_id' => $request->ptn2_id,
                 'prodi_2' => $request->prodi_2,
                 'payment_proof_path' => $payment_proof->hashName(),
-                'jenjang' => 'SMA'
+                'jenjang' => $request->jenjang
             ]);
         }else{
             $peserta = Peserta::create([
@@ -163,7 +163,7 @@ class LandingController extends Controller
                 'school_name' => $request->universitas_name,
                 'info_source' => implode(',', $request->info_source),
                 'payment_proof_path' => $payment_proof->hashName(),
-                'jenjang' => 'Mahasiswa'
+                'jenjang' => $request->jenjang
             ]);
         }
 
