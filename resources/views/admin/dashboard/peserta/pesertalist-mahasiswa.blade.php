@@ -77,40 +77,12 @@
                         <p id="no_hp"></p>
                     </div>
                     <div>
-                        <p class="font-bold mb-0 mt-2">Alamat</p>
-                        <p id="address"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Asal Sekolah</p>
+                        <p class="font-bold mb-0 mt-2">Asal Universitas</p>
                         <p id="school_name"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Kelas</p>
-                        <p id="kelas"></p>
                     </div>
                     <div>
                         <p class="font-bold mb-0 mt-2">Instagram</p>
                         <p id="instagram"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Nama Institusi Pil Pertama</p>
-                        <p id="ptn1"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Jurusan Pilihan Pertama</p>
-                        <p id="pil1"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Nama Institusi Pil Kedua</p>
-                        <p id="ptn2"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Jurusan Pilihan Kedua</p>
-                        <p id="pil2"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Foto Identitas</p>
-                            <img id="photo" class="object-scale-down w-50" src=""/>
                     </div>
                 </div>
             </div>
@@ -158,7 +130,7 @@
                     {"className": "dt-center", "targets": "_all"}
                 ],
                 ajax: {
-                    url: "{{route('admin.peserta.TO')}}"
+                    url: "{{route('admin.peserta.Expo')}}"
                 },
                 columns:
                 [
@@ -185,16 +157,8 @@
                 $('#email').text(data.email)
                 $('#no_hp').text(data.whatsapp)
                 $('#info_source').text(data.info_source)
-                $('#address').text(data.address)
                 $('#school_name').text(data.school_name)
-                $('#kelas').text(data.kelas)
                 $('#instagram').text(data.instagram)
-                $('#photo').attr('src', `{{asset('storage/photo_path/${data.photo_path}')}}`)
-                $('#ptn1').text(data.pilihan_pertama.nama_universitas)
-                $('#pil1').text(data.prodi_1)
-                $('#ptn2').text(data.pilihan_kedua.nama_universitas)
-                $('#pil2').text(data.prodi_2)
-
             })
 });
     </script>

@@ -22,4 +22,12 @@ class Peserta extends Model
     {
         return $this->belongsTo(Universitas::class, 'ptn2_id');
     }
+
+    public function getJenjangAttribute(){
+        if ($this->attributes['jenjang'] == 'SMA') {
+            return 'Tryout';
+        } elseif ($this->attributes['jenjang'] == 'Mahasiswa') {
+            return 'Expo Kampus';
+        }
+    }
 }

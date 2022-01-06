@@ -21,6 +21,9 @@
                                 <span class="text-white">No.Handphone</span>
                             </th>
                             <th class="px-16 py-2 ">
+                                <span class="text-white">Jenis Pendaftaran</span>
+                            </th>
+                            <th class="px-16 py-2 ">
                                 <span class="text-white">Bukti Pembayaran</span>
                             </th>
                             <th class="px-8 py-2 ">
@@ -59,11 +62,16 @@
                 class="fas fa-times"></i></button>
     </div>
     <hr/>
-        <div id="anggota_1" class="mt-8">
+
+        <div id="SMA" class="mt-4 hidden">
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div>
                     <p class="font-bold mb-0 mt-2">Nama Peserta</p>
                     <p id="name"></p>
+                </div>
+                <div>
+                    <p class="font-bold mb-0 mt-2">Jenis Pendaftaran</p>
+                    <p id="jenis"></p>
                 </div>
                 <div>
                     <p class="font-bold mb-0 mt-2">Sumber Informasi</p>
@@ -119,6 +127,44 @@
                 </div>
             </div>
         </div>
+
+        <div id="Mahasiswa" class="mt-4 hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div>
+                    <p class="font-bold mb-0 mt-2">Nama Peserta</p>
+                    <p id="name2"></p>
+                </div>
+                <div>
+                    <p class="font-bold mb-0 mt-2">Jenis Pendaftaran</p>
+                    <p id="jenis2"></p>
+                </div>
+                <div>
+                    <p class="font-bold mb-0 mt-2">Sumber Informasi</p>
+                    <p id="info_source2"></p>
+                </div>
+                <div>
+                    <p class="font-bold mb-0 mt-2">Email</p>
+                    <p id="email2"></p>
+                </div>
+                <div>
+                    <p class="font-bold mb-0 mt-2">No Telepon</p>
+                    <p id="no_hp2"></p>
+                </div>
+                <div>
+                    <p class="font-bold mb-0 mt-2">Asal Universitas</p>
+                    <p id="school_name2"></p>
+                </div>
+                <div>
+                    <p class="font-bold mb-0 mt-2">Instagram</p>
+                    <p id="instagram2"></p>
+                </div>
+                <div>
+                    <p class="font-bold mb-0 mt-2">Bukti Pembayaran</p>
+                        <a id="buktibayara2" href="http://" target="_blank" rel="noopener noreferrer"><img id="buktibayar2" class="object-scale-down w-2/3" src=""/></a>
+                </div>
+            </div>
+        </div>
+
         <hr class="my-4"/>
 
         <div class="flex flex-row gap-2 justify-end">
@@ -149,6 +195,7 @@
 @endpush
 
 @push('js')
+
     <script>
         $(document).ready(function(){
             $('#tabel').DataTable({
@@ -171,6 +218,7 @@
                 {data:'name', name:'name'},
                 {data:'email', name:'email',  orderable:false},
                 {data:'whatsapp', name:'whatsapp', orderable:false},
+                {data:'jenjang', name:'jenjang', orderable:false},
                 {data:'payment_proof_path', name:'payment_proof_path',orderable:false},
                 {data:'action', name:'action', searchable:false, orderable:false}
                 ]
@@ -181,21 +229,36 @@
             event.preventDefault();
             const id = $(this).data('id');
             $.get(`detailPeserta/${id}`, function ({data}) {
-                $('#name').text(data.name)
-                $('#email').text(data.email)
-                $('#no_hp').text(data.whatsapp)
-                $('#info_source').text(data.info_source)
-                $('#address').text(data.address)
-                $('#school_name').text(data.school_name)
-                $('#kelas').text(data.kelas)
-                $('#instagram').text(data.instagram)
-                $('#photo').attr('src', `{{asset('storage/photo_path/${data.photo_path}')}}`)
-                $('#buktibayar').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
-                $('#buktibayara').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
-                $('#ptn1').text(data.pilihan_pertama.nama_universitas)
-                $('#pil1').text(data.prodi_1)
-                $('#ptn2').text(data.pilihan_kedua.nama_universitas)
-                $('#pil2').text(data.prodi_2)
+                if(data.jenjang === 'SMA'){
+                    $('#SMA').attr('class', 'mt-8')
+                    $('#name').text(data.name)
+                    $('#email').text(data.email)
+                    $('#no_hp').text(data.whatsapp)
+                    $('#info_source').text(data.info_source)
+                    $('#address').text(data.address)
+                    $('#school_name').text(data.school_name)
+                    $('#kelas').text(data.kelas)
+                    $('#instagram').text(data.instagram)
+                    $('#photo').attr('src', `{{asset('storage/photo_path/${data.photo_path}')}}`)
+                    $('#buktibayar').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
+                    $('#buktibayara').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
+                    $('#ptn1').text(data.pilihan_pertama.nama_universitas)
+                    $('#pil1').text(data.prodi_1)
+                    $('#ptn2').text(data.pilihan_kedua.nama_universitas)
+                    $('#pil2').text(data.prodi_2)
+                    $('#jenis').text(data.jenjang)
+                }else{
+                    $('#Mahasiswa').attr('class', 'mt-8')
+                    $('#name2').text(data.name)
+                    $('#email2').text(data.email)
+                    $('#no_hp2').text(data.whatsapp)
+                    $('#info_source2').text(data.info_source)
+                    $('#school_name2').text(data.school_name)
+                    $('#instagram2').text(data.instagram)
+                    $('#buktibayar2').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
+                    $('#buktibayara2').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
+                    $('#jenis2').text(data.jenjang)
+                }
             })
 });
 
