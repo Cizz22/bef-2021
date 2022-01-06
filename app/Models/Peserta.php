@@ -11,7 +11,7 @@ class Peserta extends Model
 
     protected $fillable = [
         'name', 'email', 'whatsapp', 'instagram', 'school_name', 'address', 'kelas', 'photo_path',
-        'peminatan', 'payment_proof_path', 'payment_verif_status', 'info_source', 'ptn1_id', 'prodi_1', 'ptn2_id', 'prodi_2'
+        'peminatan', 'payment_proof_path', 'payment_verif_status', 'info_source', 'ptn1_id', 'prodi_1', 'ptn2_id', 'prodi_2','jenjang'
     ];
     public function pilihanPertama()
     {
