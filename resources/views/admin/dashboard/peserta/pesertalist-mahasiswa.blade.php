@@ -81,6 +81,10 @@
                         <p id="school_name"></p>
                     </div>
                     <div>
+                        <p class="font-bold mb-0 mt-2">Bukti Pembayaran</p>
+                            <a id="buktibayara" href="http://" target="_blank" rel="noopener noreferrer"><img id="buktibayar" class="object-scale-down w-2/3" src=""/></a>
+                    </div>
+                    <div>
                         <p class="font-bold mb-0 mt-2">Instagram</p>
                         <p id="instagram"></p>
                     </div>
@@ -159,6 +163,8 @@
                 $('#info_source').text(data.info_source)
                 $('#school_name').text(data.school_name)
                 $('#instagram').text(data.instagram)
+                $('#buktibayar').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
+                $('#buktibayara').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
             })
 });
     </script>

@@ -112,6 +112,10 @@
                         <p class="font-bold mb-0 mt-2">Foto Identitas</p>
                             <img id="photo" class="object-scale-down w-50" src=""/>
                     </div>
+                    <div>
+                        <p class="font-bold mb-0 mt-2">Bukti Pembayaran</p>
+                            <a id="buktibayara" href="http://" target="_blank" rel="noopener noreferrer"><img id="buktibayar" class="object-scale-down w-2/3" src=""/></a>
+                    </div>
                 </div>
             </div>
             <hr class="my-4"/>
@@ -194,7 +198,8 @@
                 $('#pil1').text(data.prodi_1)
                 $('#ptn2').text(data.pilihan_kedua.nama_universitas)
                 $('#pil2').text(data.prodi_2)
-
+                $('#buktibayar').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
+                $('#buktibayara').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
             })
 });
     </script>
