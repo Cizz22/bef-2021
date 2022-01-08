@@ -81,12 +81,12 @@
                         <p id="school_name"></p>
                     </div>
                     <div>
-                        <p class="font-bold mb-0 mt-2">Bukti Pembayaran</p>
-                            <a id="buktibayara" href="http://" target="_blank" rel="noopener noreferrer"><img id="buktibayar" class="object-scale-down w-2/3" src=""/></a>
-                    </div>
-                    <div>
                         <p class="font-bold mb-0 mt-2">Instagram</p>
                         <p id="instagram"></p>
+                    </div>
+                    <div>
+                        <p class="font-bold mb-0 mt-2">Bukti Pembayaran</p>
+                            <a id="buktibayara" href="http://" target="_blank" rel="noopener noreferrer"><img id="buktibayar" class="object-scale-down w-2/3" src=""/></a>
                     </div>
                 </div>
             </div>
