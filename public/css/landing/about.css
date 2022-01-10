@@ -87,12 +87,50 @@ header h1 {
 }
 
 
+.sharing{
+    background-image: url("../../img/svg/bg-effect-sharing-section.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width:992px) {
+    .expo-campus{
+        background-image: url("../../img/svg/bg-effect-expo-section.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .simulasi{
+        background-image: url("../../img/svg/bg-effect-simulasi-section.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+
 .intro .row,
 .sharing .row,
 .expo-campus .row,
 .simulasi .row,
 .sponsor .row {
-    padding: 1.25em 0 !important;
+    padding: 1.25em 0;
+}
+
+.sharing h4{
+    background: linear-gradient(
+        264.93deg,
+        #f1453b 2.55%,
+        #e0a839 42.83%,
+        #67a544 63.62%,
+        #39a0a2 97.63%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .form-daftar {

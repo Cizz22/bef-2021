@@ -1,5 +1,5 @@
 <footer>
-    <div class="pesan d-lg-block d-none">
+    <div class="pesan d-xl-block d-none">
       <h5 class="pb-4 text-center">Apa yang ingin kamu sampaikan?</h5>
       <form action="#">
         <div class="mb-3 input-group">
@@ -9,7 +9,7 @@
       </form>
     </div>
     <div class="container pt-5 mt-5">
-        <div class="row d-lg-none d-block">
+        <div class="row d-xl-none d-block">
             <div class="pesan-mobile">
               <h5 class="pb-4 text-center">Apa yang ingin kamu sampaikan?</h5>
               <form action="{{route('landing.contact')}}" method="get">

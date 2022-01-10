@@ -149,3 +149,7 @@ section {
         font-size: 1rem;
     }
 }
+
+.zoom-hover:hover{
+    scale: calc(1.025);
+}
