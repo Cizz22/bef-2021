@@ -2,6 +2,11 @@
 
 @section('stylesheet')
     <link rel="stylesheet" href="{{ asset('css/landing/about.css') }}">
+    <style>
+        .img-fluid{
+            max-height: 100%;
+        }
+    </style>
 @endsection
 
 
@@ -226,6 +231,11 @@
                 <div class="py-5 text-center row" data-aos="fade-up" data-aos-duration="1500">
                     <div class="col-md">
                         <img src="{{ asset('img/png/media-partner.png') }}" class="img-fluid" alt="media-partner">
+                    </div>
+                </div>
+                <div class="py-5 text-center row" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="col-md" style="height: 225px;">
+                        <img src="{{ asset('img/png/zeniora.png') }}" class="img-fluid" alt="zeniora">
                     </div>
                 </div>
             </div>
