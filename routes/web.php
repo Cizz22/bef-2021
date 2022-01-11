@@ -17,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 //Landing Route
 Route::get('/', [LandingController::class, 'index'])->name('landing.about');
+Route::get('/dokumentasi', [LandingController::class, 'showDocum'])->name('landing.dokumentasi');
 Route::get('/blogs', [LandingController::class, 'showBlogs'])->name('landing.blogs');
 Route::get('/post/{slug}', [LandingController::class, 'showPost'])->name('landing.post');
 Route::get('/coming-soon', [LandingController::class, 'soon'])->name('landing.coming_soon');

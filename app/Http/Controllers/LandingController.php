@@ -24,6 +24,13 @@ class LandingController extends Controller
         ]);
     }
 
+    public function showDocum() {
+        return view('landing.dokumentasi',[
+            "title" => "Dokumentasi BEF One Decade"
+        ]);
+    }
+
+
     public function showBlogs()
     {
         $blogs = Blog::where('status','=', 'published')->paginate(6);

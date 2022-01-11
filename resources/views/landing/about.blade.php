@@ -42,7 +42,7 @@
                         ke-10 hadirnya BEF di Kabupaten Brebes.</p>
                 </div>
                 <div class="row">
-                    <a href="#" class="main-btn">
+                    <a href="/dokumentasi" class="main-btn">
                         Kepoin Lebih Lanjut!
                     </a>
                 </div>

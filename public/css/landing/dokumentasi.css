@@ -1,0 +1,38 @@
+@import url(about.css);
+
+.fa-arrow-circle-down{
+    margin-top: .25em;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+}
+
+.nav-pills .nav-link.active{
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    background: linear-gradient(105.14deg, #4B804D -1.13%, #327C7E 109.86%) !important;
+}
+
+.separator{
+    width: 8px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(89.81deg, rgba(57, 160, 162, 0.7) -14.24%, rgba(103, 165, 68, 0.7) 104.47%);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px;
+}
+
+.zoom{
+    transition: transform .3s ease;
+}
+
+.zoom:hover{
+    transform: scale(1.025);
+}
+
+
