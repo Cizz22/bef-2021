@@ -23,13 +23,13 @@
       <nav>
         <div class="row">
           <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
-            <a href="/coming-soon" class="my-2 text-center nav-link w-100 my-lg-0">Sharing & Motivation</a>
+            <a href="#sharing" class="my-2 text-center nav-link w-100 my-lg-0">Sharing & Motivating</a>
           </div>
           <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
-            <a href="/coming-soon" class="my-2 text-center nav-link w-100 my-lg-0">Simulasi UTBK</a>
+            <a href="#tryout" class="my-2 text-center nav-link w-100 my-lg-0">Try Out UTBK</a>
           </div>
           <div class="col-lg d-flex align-self-stretch justify-content-center align-items-center">
-            <a href="/coming-soon" class="my-2 text-center nav-link w-100 my-lg-0">Expo Kampus</a>
+            <a href="#expo-campus" class="my-2 text-center nav-link w-100 my-lg-0">Expo Campus</a>
           </div>
           <div class="col-lg d-flex justify-content-center align-items-center">
             <a href="blogs" class="my-2 text-center nav-link w-100 my-lg-0">Blog</a>

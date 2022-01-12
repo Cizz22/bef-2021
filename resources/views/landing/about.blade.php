@@ -54,7 +54,7 @@
             </div>
         </section>
 
-        <section class="sharing">
+        <section class="sharing" id="sharing">
             <div class="container">
                 <div class="row" data-aos="fade-up" data-aos-duration="1500">
                     <h1 class="text-center section-title">Sharing & Motivation</h1>
@@ -110,7 +110,7 @@
         </section>
 
 
-        <section class="expo-campus">
+        <section class="expo-campus" id="expo-campus">
             <div class="container">
                 <div class="row" data-aos="fade-up" data-aos-duration="1500">
                     <h1 class="text-center section-title">Expo Campus</h1>
@@ -186,7 +186,7 @@
             </div>
         </section>
 
-        <section class="simulasi" data-aos="fade-up" data-aos-duration="1500">
+        <section class="tryout" id="tryout" data-aos="fade-up" data-aos-duration="1500">
             <div class="container d-flex flex-column align-items-center">
                 <div class="row">
                     <h1 class="section-title">Try Out UTBK</h1>
@@ -229,13 +229,13 @@
                     </div>
                 </div>
                 <div class="py-5 text-center row" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="col-md">
-                        <img src="{{ asset('img/png/media-partner.png') }}" class="img-fluid" alt="media-partner">
+                    <div class="col-md" style="height: 225px;">
+                        <img src="{{ asset('img/png/zeniora.png') }}" class="img-fluid" alt="zeniora">
                     </div>
                 </div>
                 <div class="py-5 text-center row" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="col-md" style="height: 225px;">
-                        <img src="{{ asset('img/png/zeniora.png') }}" class="img-fluid" alt="zeniora">
+                    <div class="col-md">
+                        <img src="{{ asset('img/png/media-partner.png') }}" class="img-fluid" alt="media-partner">
                     </div>
                 </div>
             </div>
