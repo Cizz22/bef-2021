@@ -18,7 +18,7 @@
               <select class="form-control @error('kelas') is-invalid @enderror" id="kelas" name="jenjang">
                 <option value="">Pilih Jenjang</option>
                 <option value="SMA">SMA/SMK Sederajat</option>
-                <option value="Mahasiswa">Mahasiswa</option>
+                <option value="Mahasiswa">Mahasiswa (Expo Campus)</option>
               </select>
                 @error('jenjang')
                     <div class="mt-2 alert alert-danger">
