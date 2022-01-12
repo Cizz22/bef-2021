@@ -159,7 +159,8 @@ class LandingController extends Controller
                 'ptn2_id' => $request->ptn2_id,
                 'prodi_2' => $request->prodi_2,
                 'payment_proof_path' => $payment_proof->hashName(),
-                'jenjang' => $request->jenjang
+                'jenjang' => $request->jenjang,
+                'kode' => $request->kode
             ]);
         }else{
             $peserta = Peserta::create([
