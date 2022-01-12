@@ -15,7 +15,7 @@
                                 <span class="text-white">Nama</span>
                             </th>
                             <th class="px-16 py-2 ">
-                                <span class=" text-white">Email</span>
+                                <span class=" text-white">Asal Universitas</span>
                             </th>
                             <th class="px-16 py-2 ">
                                 <span class="text-white ">No.Handphone</span>
@@ -145,7 +145,7 @@
                     }
                 },
                 {data:'name', name:'name'},
-                {data:'email', name:'email' },
+                {data:'school_name', name:'school_name' },
                 {data:'whatsapp', name:'whatsapp'},
                 {data:'payment_verif_status', name:'payment_verif_status'},
                 {data:'action', name:'action', searchable:false, orderable:false}
