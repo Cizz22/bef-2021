@@ -161,6 +161,15 @@
                 @enderror
             </div>
             <div class="mb-3 form-group">
+                <label for="kode" class="form-label">Kode Promo (Jika ada)</label>
+                <input type="text" class="form-control @error('prodi_2') is-invalid @enderror" id="prodi_kedua" value="{{ old('kode') }}" name="kode" placeholder="Kode Promo">
+                @error('prodi_2')
+                    <div class="mt-2 alert alert-danger">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+            <div class="mb-3 form-group">
                 <label for="foto" class="form-label">Bukti Pembayaran</label>
                 <div class="card">
                   <div class="card-header">
@@ -176,6 +185,7 @@
                       </div>
                   @enderror
               </div>
+
               <p>Dapat info BEF dari?</p>
               <div class="mb-3 form-check">
                 <input class="form-check-input" type="checkbox" value="teman" id="teman" name="info_source[]">

@@ -32,6 +32,7 @@ class CreatePesertasTable extends Migration
             $table->unsignedBigInteger('ptn2_id')->nullable();
             $table->string('prodi_2')->nullable();
             $table->enum('jenjang', ['SMA', 'Mahasiswa']);
+            $table->string('kode')->nullable();
             $table->timestamps();
         });
     }
