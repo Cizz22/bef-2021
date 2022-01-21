@@ -117,9 +117,13 @@
                     <p class="font-bold mb-0 mt-2">Jurusan Pilihan Kedua</p>
                     <p id="pil2"></p>
                 </div>
-                <div>
+                <div class="">
                     <p class="font-bold mb-0 mt-2">Kode Promo</p>
                     <p id="kode"></p>
+                </div>
+                <div class="">
+                    <p class="font-bold mb-0 mt-2"></p>
+                    <p id=""></p>
                 </div>
                 <div >
                     <p class="font-bold mb-0 mt-2">Foto Identitas</p>

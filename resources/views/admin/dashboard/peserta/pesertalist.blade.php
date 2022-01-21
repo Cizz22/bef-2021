@@ -113,6 +113,10 @@
                         <p id="kode"></p>
                     </div>
                     <div>
+                        <p class="font-bold mb-0 mt-2"></p>
+                        <p id=""></p>
+                    </div>
+                    <div>
                         <p class="font-bold mb-0 mt-2">Foto Identitas</p>
                             <img id="photo" class="object-scale-down w-50" src=""/>
                     </div>
