@@ -12,7 +12,7 @@
   Indonesia. Brebes Education ini sudah ada sejak tahun 2013, yang berarti tahun ini memasuki tahun
   ke-10 hadirnya BEF di Kabupaten Brebes." }}">
   <meta name="keywords" content="{{ $meta_keyword ?? "BEF , ITS, TryOut, brebes, SMA, Brebes Education Fair, brebes education fair, Brebes, bef, tryout bef, Education Fair, education fair, bef 1 dekade, bef 2022, BEF 2022" }}">
-  <meta name="author" content="BEF 2021">
+  <meta name="author" content="BEF 2022">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -26,7 +26,7 @@
 
   <link rel="icon" href="{{ asset('img/svg/logo-bef.svg') }}">
 
-  <title>BEF 2021 | {{ $title }}</title>
+  <title>BEF 2022 | {{ $title }}</title>
 </head>
 
 <body>
