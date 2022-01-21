@@ -109,6 +109,10 @@
                         <p id="pil2"></p>
                     </div>
                     <div>
+                        <p class="font-bold mb-0 mt-2">Kode Promo</p>
+                        <p id="kode"></p>
+                    </div>
+                    <div>
                         <p class="font-bold mb-0 mt-2">Foto Identitas</p>
                             <img id="photo" class="object-scale-down w-50" src=""/>
                     </div>
@@ -198,6 +202,7 @@
                 $('#pil1').text(data.prodi_1)
                 $('#ptn2').text(data.pilihan_kedua.nama_universitas)
                 $('#pil2').text(data.prodi_2)
+                $('#kode').text(data.kode)
                 $('#buktibayar').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
                 $('#buktibayara').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
             })
