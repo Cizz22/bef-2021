@@ -117,6 +117,14 @@
                     <p class="font-bold mb-0 mt-2">Jurusan Pilihan Kedua</p>
                     <p id="pil2"></p>
                 </div>
+                <div class="">
+                    <p class="font-bold mb-0 mt-2">Kode Promo</p>
+                    <p id="kode"></p>
+                </div>
+                <div class="">
+                    <p class="font-bold mb-0 mt-2"></p>
+                    <p id=""></p>
+                </div>
                 <div >
                     <p class="font-bold mb-0 mt-2">Foto Identitas</p>
                         <img id="photo" class="object-scale-down w-2/3" src=""/>
@@ -247,6 +255,7 @@
                     $('#ptn2').text(data.pilihan_kedua.nama_universitas)
                     $('#pil2').text(data.prodi_2)
                     $('#jenis').text(data.jenjang)
+                    $('#kode').text(data.kode)
                 }else{
                     $('#Mahasiswa').attr('class', 'mt-8')
                     $('#name2').text(data.name)
