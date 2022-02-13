@@ -23,7 +23,7 @@ class PesertaMahasiswaExport implements FromQuery, WithMapping, WithHeadings
     public function headings(): array
     {
         return [
-            'no', 'name', 'email', 'whatsapp', 'instagram', 'school_name'
+            'id', 'name', 'email', 'whatsapp', 'instagram', 'school_name'
         ];
     }
 
