@@ -5,7 +5,8 @@
     <div x-data="{ showModal1: false }" class="container my-5 mx-auto rounded-sm py-6 px-8">
         <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
             <div class="inline-block min-w-full shadow-sm rounded-lg overflow-hidden">
-                <table class="min-w-full table-auto hover " id="tabel">
+                <a href="{{route('export.mahasiswa')}}"> <button class="px-4 py-2 bg-green-500 hover:bg-green-700 text-white mb-4 rounded">Export</button></a>
+                    <table class="min-w-full table-auto hover " id="tabel">
                     <thead class="justify-between">
                         <tr class="bg-gray-600 w-full">
                             <th class="px-16 py-2">

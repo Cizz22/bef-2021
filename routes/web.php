@@ -51,5 +51,10 @@ Route::prefix('admin')->group(function () {
         Route::get('/blogs/edit/{id}', [BlogsController::class,'edit'])->name('admin.blogs.edit');
         Route::put('/blogs/update/{id}', [BlogsController::class,'update'])->name('admin.blogs.update');
         Route::delete('/blogs/delete/{id}', [BlogsController::class,'delete'])->name('admin.blogs.delete');
+
+        //Excel Export Route
+        Route::get('export/mahasiswa', [PesertaListController::class, 'exportPesertaMahasiswa'])->name('export.mahasiswa');
+        Route::get('export/sma', [PesertaListController::class, 'exportPesertaSMA'])->name('export.SMA');
     });
 });
+

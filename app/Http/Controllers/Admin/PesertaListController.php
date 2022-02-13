@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Exports\PesertaMahasiswaExport;
+use App\Exports\PesertaSMAExport;
 use App\Http\Controllers\Controller;
 use App\Models\Peserta;
 use Illuminate\Http\Request;
 use DataTables;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PesertaListController extends Controller
 {
@@ -87,4 +90,15 @@ class PesertaListController extends Controller
         ]);
         return redirect()->route('admin.konfirmasibayar.index')->with(['success' => 'Pembayaran ditolak']);
     }
+
+    function exportPesertaMahasiswa()
+    {
+        return Excel::download(new PesertaMahasiswaExport, 'Peserta_Mahasiswa.xlsx');
+    }
+
+    function exportPesertaSMA()
+    {
+        return Excel::download(new PesertaSMAExport, 'Peserta_SMA.xlsx');
+    }
+
 }

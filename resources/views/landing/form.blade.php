@@ -162,8 +162,8 @@
             </div>
             <div class="mb-3 form-group">
                 <label for="kode" class="form-label">Kode Promo (Jika ada)</label>
-                <input type="text" class="form-control @error('prodi_2') is-invalid @enderror" id="prodi_kedua" value="{{ old('kode') }}" name="kode" placeholder="Kode Promo">
-                @error('prodi_2')
+                <input type="text" class="form-control @error('kode') is-invalid @enderror" id="prodi_kedua" value="{{ old('kode') }}" name="kode" placeholder="Kode Promo">
+                @error('kode')
                     <div class="mt-2 alert alert-danger">
                         {{ $message }}
                     </div>
