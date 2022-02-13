@@ -15,7 +15,7 @@ class PesertaSMAExport implements FromQuery, WithHeadings, WithMapping
 
     public function query()
     {
-        return peserta::query()->where([
+        return Peserta::query()->where([
             ['jenjang', '=', 'SMA'],
             ['payment_verif_status', '=','Terverifikasi']
         ]);
