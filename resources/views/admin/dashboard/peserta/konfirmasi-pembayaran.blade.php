@@ -237,7 +237,7 @@
             event.preventDefault();
             const id = $(this).data('id');
             $.get(`detailPeserta/${id}`, function ({data}) {
-                if(data.jenjang === 'SMA'){
+                if(data.jenjang === 'SMA' || data.jenjang === 'SMA2' ){
                     $('#SMA').attr('class', 'mt-8')
                     $('#name').text(data.name)
                     $('#email').text(data.email)
