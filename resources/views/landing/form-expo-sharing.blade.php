@@ -53,7 +53,7 @@
                 @enderror
             </div>
               <div class="mb-3 form-group">
-                <label for="ptn_pertama" class="form-label">PTN Pertama</label>
+                <label for="ptn_pertama" class="form-label">PTN Impian</label>
                 <select class="form-control @error('ptn1_id') is-invalid @enderror" id="ptn_pertama" name="ptn1_id">
                     <option value="">Pilih PTN Pertama</option>
                     @foreach($ptn as $p)
@@ -67,32 +67,9 @@
                 @enderror
               </div>
               <div class="mb-3 form-group">
-                <label for="prodi_pertama" class="form-label">Pilihan Pertama</label>
+                <label for="prodi_pertama" class="form-label">Jurusan Impian</label>
                 <input type="text" class="form-control @error('prodi_1') is-invalid @enderror" id="prodi_pertama" value="{{ old('prodi_1') }}" name="prodi_1" placeholder="Program Studi Pertama">
                 @error('prodi_1')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-            </div>
-              <div class="mb-3 form-group">
-                <label for="ptn_kedua" class="form-label">PTN Kedua</label>
-                <select class="form-control @error('ptn2_id') is-invalid @enderror" id="ptn_kedua" name="ptn2_id">
-                    <option value="">Pilih PTN Kedua</option>
-                    @foreach($ptn as $p)
-                    <option value="{{ $p->id }}"> {{ $p->nama_universitas }}</option>
-                    @endforeach
-                </select>
-                @error('ptn2_id')
-                    <div class="mt-2 alert alert-danger">
-                        {{ $message }}
-                    </div>
-                @enderror
-              </div>
-              <div class="mb-3 form-group">
-                <label for="prodi_kedua" class="form-label">Pilihan Kedua</label>
-                <input type="text" class="form-control @error('prodi_2') is-invalid @enderror" id="prodi_kedua" value="{{ old('prodi_2') }}" name="prodi_2" placeholder="Program Studi Kedua">
-                @error('prodi_2')
                     <div class="mt-2 alert alert-danger">
                         {{ $message }}
                     </div>

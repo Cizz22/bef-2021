@@ -16,7 +16,7 @@ class PesertaSMA2Export implements FromQuery, WithHeadings, WithMapping
     public function query()
     {
         return Peserta::query()->where([
-            ['jenjang', '=',  'SMA2'],
+            ['jenjang', '=', 'SMA2'],
             ['payment_verif_status', '=','Terverifikasi']
         ]);
     }
@@ -24,7 +24,7 @@ class PesertaSMA2Export implements FromQuery, WithHeadings, WithMapping
     public function headings(): array
     {
         return [
-            'no', 'name', 'email', 'whatsapp', 'school_name','ptn1_id', 'prodi_1', 'ptn2_id', 'prodi_2'
+            'no', 'name', 'email', 'whatsapp', 'school_name','ptn1_id', 'prodi_1'
         ];
     }
 
@@ -38,8 +38,6 @@ class PesertaSMA2Export implements FromQuery, WithHeadings, WithMapping
             $peserta->school_name,
             $peserta->pilihanPertama->nama_universitas,
             $peserta->prodi_1,
-            $peserta->pilihanKedua->nama_universitas,
-            $peserta->prodi_2,
         ];
     }
 }
