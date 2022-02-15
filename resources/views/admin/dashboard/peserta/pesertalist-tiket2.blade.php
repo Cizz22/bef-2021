@@ -90,18 +90,6 @@
                         <p id="pil1"></p>
                     </div>
                     <div>
-                        <p class="font-bold mb-0 mt-2">Nama Institusi Pil Kedua</p>
-                        <p id="ptn2"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Jurusan Pilihan Kedua</p>
-                        <p id="pil2"></p>
-                    </div>
-                    <div>
-                        <p class="font-bold mb-0 mt-2">Jurusan Pilihan Kedua</p>
-                        <p id="tiket"></p>
-                    </div>
-                    <div>
                         <p class="font-bold mb-0 mt-2">Bukti Pembayaran</p>
                             <a id="buktibayara" href="http://" target="_blank" rel="noopener noreferrer"><img id="buktibayar" class="object-scale-down w-2/3" src=""/></a>
                     </div>
@@ -181,9 +169,6 @@
                 $('#school_name').text(data.school_name)
                 $('#ptn1').text(data.pilihan_pertama.nama_universitas)
                 $('#pil1').text(data.prodi_1)
-                $('#ptn2').text(data.pilihan_kedua.nama_universitas)
-                $('#pil2').text(data.prodi_2)
-                $('#tiket').text(data.tiket);
                 $('#buktibayar').attr('src', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
                 $('#buktibayara').attr('href', `{{asset('storage/payment_proof/${data.payment_proof_path}')}}`)
             })
