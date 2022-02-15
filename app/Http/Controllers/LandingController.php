@@ -62,9 +62,12 @@ class LandingController extends Controller
                 'jenjang' => 'required'
             ]);
            switch ($request->query('jenjang')) {
-                case 'SMA':
+                case 'SMA-1':
                    return redirect()->route('landing.form');
                    break;
+                case 'SMA-2':
+                    return redirect()->route('landing.form2');
+                    break;
                 case 'Mahasiswa':
                     return redirect()->route('landing.form-mahasiswa');
                     break;
@@ -92,6 +95,14 @@ class LandingController extends Controller
         ]);
     }
 
+    public function showForm2(){
+        $ptn = Universitas::all();
+        return view('landing.form-expo-sharing', [
+            "title" => "Form Pendaftaran",
+            "ptn" => $ptn
+        ]);
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -102,25 +113,40 @@ class LandingController extends Controller
     {
         // Untuk simpan data pendaftar
         $isSMA = ($request->jenjang == 'SMA'?true:false);
+        $isSMA2 = ($request->jenjang == 'SMA2'?true:false);
 
         if($isSMA){
+                $this->validate($request, [
+                    'name' => 'required',
+                    'email' => 'required|unique:pesertas,email',
+                    'whatsapp' => 'required',
+                    'instagram' => 'required',
+                    'school_name' => 'required',
+                    'address' => 'required',
+                    'kelas' => 'required',
+                    'photo_path' => 'required|image|mimes:png,jpg,jpeg',
+                    'peminatan' => 'required',
+                    'ptn1_id' => 'required',
+                    'prodi_1' => 'required',
+                    'ptn2_id' => 'required',
+                    'prodi_2' => 'required',
+                    'payment_proof' => 'required|image|mimes:png,jpg,jpeg',
+                ]);
+        }
+        elseif($isSMA2) {
             $this->validate($request, [
                 'name' => 'required',
                 'email' => 'required|unique:pesertas,email',
                 'whatsapp' => 'required',
-                'instagram' => 'required',
                 'school_name' => 'required',
-                'address' => 'required',
-                'kelas' => 'required',
-                'photo_path' => 'required|image|mimes:png,jpg,jpeg',
-                'peminatan' => 'required',
                 'ptn1_id' => 'required',
                 'prodi_1' => 'required',
                 'ptn2_id' => 'required',
                 'prodi_2' => 'required',
-                'payment_proof' => 'required|image|mimes:png,jpg,jpeg'
+                'payment_proof' => 'required|image|mimes:png,jpg,jpeg',
             ]);
-        }else{
+        }
+        else{
             $this->validate($request, [
                 'name' => 'required',
                 'email' => 'required|unique:pesertas,email',
@@ -136,33 +162,48 @@ class LandingController extends Controller
         // $request->photo_path->move(public_path('photo_path'), $imageName);
 
         if($isSMA){
-            $photo_path = $request->file('photo_path');
-            $photo_path->storeAs('public/photo_path', $photo_path->hashName());
+                $photo_path = $request->file('photo_path');
+                $photo_path->storeAs('public/photo_path', $photo_path->hashName());
         }
         $payment_proof= $request->file('payment_proof');
         $payment_proof->storeAs('public/payment_proof', $payment_proof->hashName());
 
         if($isSMA){
+                $peserta = Peserta::create([
+                    'name' => $request->name,
+                    'email' => $request->email,
+                    'whatsapp' => $request->whatsapp,
+                    'instagram' => $request->instagram,
+                    'school_name' => $request->school_name,
+                    'address' => $request->address,
+                    'kelas' => $request->kelas,
+                    'photo_path' => $photo_path->hashName(),
+                    'peminatan' => $request->peminatan,
+                    'info_source' => implode(',', $request->info_source),
+                    'ptn1_id' => $request->ptn1_id,
+                    'prodi_1' => $request->prodi_1,
+                    'ptn2_id' => $request->ptn2_id,
+                    'prodi_2' => $request->prodi_2,
+                    'payment_proof_path' => $payment_proof->hashName(),
+                    'jenjang' => $request->jenjang,
+                    'kode' => $request->kode,
+                ]);
+        }
+        elseif ($isSMA2) {
             $peserta = Peserta::create([
                 'name' => $request->name,
                 'email' => $request->email,
                 'whatsapp' => $request->whatsapp,
-                'instagram' => $request->instagram,
                 'school_name' => $request->school_name,
-                'address' => $request->address,
-                'kelas' => $request->kelas,
-                'photo_path' => $photo_path->hashName(),
-                'peminatan' => $request->peminatan,
                 'info_source' => implode(',', $request->info_source),
                 'ptn1_id' => $request->ptn1_id,
                 'prodi_1' => $request->prodi_1,
-                'ptn2_id' => $request->ptn2_id,
-                'prodi_2' => $request->prodi_2,
                 'payment_proof_path' => $payment_proof->hashName(),
                 'jenjang' => $request->jenjang,
-                'kode' => $request->kode
             ]);
-        }else{
+        }
+
+        else{
             $peserta = Peserta::create([
                 'name' => $request->name,
                 'email' => $request->email,

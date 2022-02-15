@@ -18,7 +18,7 @@ class CreatePesertasTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('whatsapp');
-            $table->string('instagram');
+            $table->string('instagram')->nullable();;
             $table->string('school_name');
             $table->string('address')->nullable();
             $table->enum('kelas', ["10", "11", "12"])->nullable();
@@ -31,7 +31,7 @@ class CreatePesertasTable extends Migration
             $table->string('prodi_1')->nullable();
             $table->unsignedBigInteger('ptn2_id')->nullable();
             $table->string('prodi_2')->nullable();
-            $table->enum('jenjang', ['SMA', 'Mahasiswa']);
+            $table->enum('jenjang', ['SMA', 'SMA2' , 'Mahasiswa']);
             $table->string('kode')->nullable();
             $table->timestamps();
         });

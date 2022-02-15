@@ -28,6 +28,7 @@ Route::get('/form', [LandingController::class, 'showForm'])->name('landing.form'
 Route::post('/store', [LandingController::class, 'store'])->name('landing.form-store');
 Route::get('/pick-form', [LandingController::class,'pickForm'])->name('landing.pick-form');
 Route::get('/form-mahasiswa', [LandingController::class, 'showFormMahasiswa'])->name('landing.form-mahasiswa');
+Route::get('/form-2', [LandingController::class, 'showForm2'])->name('landing.form2');
 Route::get('/contact', [LandingController::class,'contact'])->name('landing.contact');
 
 //Admin Route
@@ -40,6 +41,7 @@ Route::prefix('admin')->group(function () {
         //route dashboard
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard.index');
         Route::get('/listpesertaTO', [PesertaListController::class, 'pesertaTO'])->name('admin.peserta.TO');
+        Route::get('/listpesertaTiket2', [PesertaListController::class, 'pesertaTiket2'])->name('admin.peserta.Tiket2');
         Route::get('/listpesertaExpo', [PesertaListController::class, 'pesertaExpoKampus'])->name('admin.peserta.Expo');
         Route::get('/konfirmasibayar', [PesertaListController::class, 'konfirmasibayar'])->name('admin.konfirmasibayar.index');
         Route::get('/detailPeserta/{id}', [PesertaListController::class,'detailPeserta'])->name('admin.detailPeserta');
@@ -55,6 +57,7 @@ Route::prefix('admin')->group(function () {
         //Excel Export Route
         Route::get('export/mahasiswa', [PesertaListController::class, 'exportPesertaMahasiswa'])->name('export.mahasiswa');
         Route::get('export/sma', [PesertaListController::class, 'exportPesertaSMA'])->name('export.SMA');
+        Route::get('export/sma/tiket2', [PesertaListController::class, 'exportPesertaSMA'])->name('export.SMA2');
     });
 });
 

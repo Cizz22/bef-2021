@@ -28,6 +28,22 @@ class PesertaListController extends Controller
         return view('admin.dashboard.peserta.pesertalist');
     }
 
+    function pesertaTiket2(){
+        if(request()->ajax()){
+            $data = Peserta::where('jenjang', 'SMA2')->get();
+            return datatables()
+            ->of($data)
+            ->setRowClass('tabletr overflow-x-hidden')
+            ->addColumn('action', function($data){
+                $button =  ' <div class="flex space-x-1 justify-around"> <button id="detail-button" @click="showModal1 = true" data-id='.$data->id.' class="p-1 text-blue-600 hover:bg-blue-600 hover:text-white rounded" title="Lihat Detail"><i class="fas fa-search-plus"></i></button></div>';
+                return $button;
+            })
+            ->rawColumns(['action'])
+            ->make(true);
+        }
+        return view('admin.dashboard.peserta.pesertalist-tiket2');
+    }
+
     function pesertaExpoKampus(){
         if(request()->ajax()){
             $data = Peserta::where('jenjang', 'Mahasiswa')->get();
