@@ -57,7 +57,7 @@ Route::prefix('admin')->group(function () {
         //Excel Export Route
         Route::get('export/mahasiswa', [PesertaListController::class, 'exportPesertaMahasiswa'])->name('export.mahasiswa');
         Route::get('export/sma', [PesertaListController::class, 'exportPesertaSMA'])->name('export.SMA');
-        Route::get('export/sma/tiket2', [PesertaListController::class, 'exportPesertaSMA'])->name('export.SMA2');
+        Route::get('export/sma/tiket2', [PesertaListController::class, 'exportPesertaSMA2'])->name('export.SMA2');
     });
 });
 

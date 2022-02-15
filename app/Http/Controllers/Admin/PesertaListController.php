@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Exports\PesertaMahasiswaExport;
+use App\Exports\PesertaSMA2Export;
 use App\Exports\PesertaSMAExport;
 use App\Http\Controllers\Controller;
 use App\Models\Peserta;
@@ -115,6 +116,11 @@ class PesertaListController extends Controller
     function exportPesertaSMA()
     {
         return Excel::download(new PesertaSMAExport, 'Peserta_SMA.xlsx');
+    }
+
+    function exportPesertaSMA2()
+    {
+        return Excel::download(new PesertaSMA2Export, 'Peserta_SMA_Tiket2.xlsx');
     }
 
 }
