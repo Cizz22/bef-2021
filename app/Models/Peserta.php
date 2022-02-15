@@ -25,10 +25,10 @@ class Peserta extends Model
 
     public function getJenjangAttribute(){
         if ($this->attributes['jenjang'] == 'SMA') {
-            return 'Tryout (Tiket 1)';
+            return 'Tryout & Expo Campus(Tiket 1)';
         }
         elseif ($this->attributes['jenjang'] == 'SMA2') {
-            return 'Expo Campus & SNM (Tiket 2)';
+            return 'Expo Campus(Tiket 2)';
         }
         elseif ($this->attributes['jenjang'] == 'Mahasiswa') {
             return 'Expo Campus';

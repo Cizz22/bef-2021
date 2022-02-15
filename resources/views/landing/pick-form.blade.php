@@ -17,8 +17,8 @@
               <label for="kelas" class="form-label">Jenjang</label>
               <select class="form-control @error('kelas') is-invalid @enderror" id="kelas" name="jenjang">
                 <option value="">Pilih Jenjang</option>
-                <option value="SMA-1">Tiket 1 Tryout, Expo Campus & Sharing and Motivation(SMA/SMK Sederajat)</option>
-                <option value="SMA-2">Tiket 2 Expo Campus & Sharing and Motivation(SMA/SMK Sederajat)</option>
+                <option value="SMA-1">Tiket 1 Tryout & Expo Campus(SMA/SMK Sederajat)</option>
+                <option value="SMA-2">Tiket 2 Expo Campus(SMA/SMK Sederajat)</option>
                 <option value="Mahasiswa">Expo Campus(Mahasiswa)</option>
               </select>
                 @error('jenjang')

@@ -115,12 +115,12 @@ class PesertaListController extends Controller
 
     function exportPesertaSMA()
     {
-        return Excel::download(new PesertaSMAExport, 'Peserta_SMA.xlsx');
+        return Excel::download(new PesertaSMAExport, 'Peserta_SMA(Tiket 1).xlsx');
     }
 
     function exportPesertaSMA2()
     {
-        return Excel::download(new PesertaSMA2Export, 'Peserta_SMA_Tiket2.xlsx');
+        return Excel::download(new PesertaSMA2Export, 'Peserta_SMA(Tiket 2).xlsx');
     }
 
 }
